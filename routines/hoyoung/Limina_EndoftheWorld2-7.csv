@@ -1,0 +1,83 @@
+
+@, label=Bot
+*, x=0.826, y=0.192, frequency=1, skip=False, adjust=False
+    Wait, duration=0.2
+    StoneTremor, direction=up
+    Wait, duration=0.1
+    Fall, distance=0.05
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.743, y=0.281, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.581, y=0.281, frequency=13, skip=False, adjust=False
+    TalismanClone
+*, x=0.581, y=0.281, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.51, y=0.246, frequency=1, skip=False, adjust=False
+    ConsumingFlames
+>, label=vortex, frequency=7, skip=False
+
+@, label=Bot2
+*, x=0.461, y=0.234, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.27, y=0.281, frequency=8, skip=False, adjust=False
+    Wait, duration=0.2
+    ErdaShower, jump=False
+*, x=0.27, y=0.281, frequency=8, skip=False, adjust=False
+    GhostFlame
+>, label=meso3, frequency=15, skip=False
+
+@, label=meso3E
+*, x=0.25, y=0.251, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+    Wait, duration=1.2
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=vortex
+>, label=meso2, frequency=3, skip=False
+
+@, label=meso2E
+*, x=0.455, y=0.192, frequency=1, skip=False, adjust=False
+    Adjust, x=0.455, y=0.192, max_steps=5
+    Wait, duration=0.1
+*, x=0.455, y=0.192, frequency=2, skip=False, adjust=False
+    MiracleTonic
+*, x=0.455, y=0.192, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StarVortex, direction=right
+*, x=0.455, y=0.192, frequency=11, skip=False, adjust=False
+    Walk, direction=left, duration=2.5
+>, label=gate, frequency=2, skip=False
+*, x=0.455, y=0.192, frequency=1, skip=False, adjust=False
+    Fall, distance=0.05
+>, label=Bot2, frequency=1, skip=False
+
+@, label=gate
+*, x=0.826, y=0.192, frequency=1, skip=False, adjust=False
+    Adjust, x=0.826, y=0.192, max_steps=7
+    ButterflyDream
+    Wait, duration=0.1
+    newWarpGate
+>, label=meso, frequency=2, skip=False
+
+@, label=mesoE
+>, label=Bot, frequency=1, skip=False
+
+@, label=meso
+*, x=0.880, y=0.096, frequency=1, skip=False, adjust=False
+    Adjust, x=0.88, y=0.096, max_steps=5
+    Wait, duration=3
+>, label=mesoE, frequency=1, skip=False
+
+@, label=meso2
+*, x=0.455, y=0.108, frequency=1, skip=False, adjust=False
+    Adjust, x=0.455, y=0.108, max_steps=5
+    Wait, duration=2
+    Walk, direction=right, duration=2
+>, label=meso2E, frequency=1, skip=False
+
+@, label=meso3
+*, x=0.150, y=0.180, frequency=1, skip=False, adjust=False
+    Adjust, x=0.15, y=0.18, max_steps=5
+    Wait, duration=3
+>, label=meso3E, frequency=1, skip=False

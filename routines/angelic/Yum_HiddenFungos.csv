@@ -1,0 +1,23 @@
+*, x=0.114, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.329, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.539, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.754, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.970, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.749, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.539, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.323, y=0.305, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.323, y=0.305, frequency=5, skip=False, adjust=False
+    Wait, duration=0.25
+    Supernova
+*, x=0.772, y=0.216, frequency=7, skip=False, adjust=False
+    Adjust, x=0.772, y=0.216, max_steps=5
+    ErdaShower, jump=False
+    Wait, duration=0.1

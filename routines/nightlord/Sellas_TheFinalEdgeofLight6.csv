@@ -1,0 +1,46 @@
+
+@, label=Bot
+*, x=0.16, y=0.302, frequency=1, skip=False, adjust=False
+    Showdown, direction=right, attacks=2, repetitions=1
+*, x=0.16, y=0.302, frequency=4, skip=False, adjust=False
+    DeathStar
+*, x=0.255, y=0.276, frequency=7, skip=False, adjust=False
+    SuddenRaid
+*, x=0.359, y=0.255, frequency=1, skip=False, adjust=False
+    Showdown, direction=right, attacks=2, repetitions=1
+*, x=0.359, y=0.255, frequency=17, skip=False, adjust=False
+    SuddenRaid
+*, x=0.536, y=0.250, frequency=1, skip=False, adjust=False
+    Showdown, direction=right, attacks=2, repetitions=1
+*, x=0.536, y=0.250, frequency=11, skip=False, adjust=False
+    DeathStar
+*, x=0.766, y=0.255, frequency=1, skip=False, adjust=False
+    Showdown, direction=right, attacks=2, repetitions=1
+*, x=0.688, y=0.255, frequency=23, skip=False, adjust=False
+    SuddenRaid
+*, x=0.667, y=0.260, frequency=1, skip=False, adjust=False
+    Showdown, direction=left, attacks=2, repetitions=1
+*, x=0.568, y=0.260, frequency=1, skip=False, adjust=False
+    Showdown, direction=left, attacks=2, repetitions=1
+*, x=0.568, y=0.260, frequency=6, skip=False, adjust=False
+    DarklordsOmen, direction=right
+>, label=erdaFlare, frequency=6, skip=False
+*, x=0.344, y=0.255, frequency=1, skip=False, adjust=False
+    Showdown, direction=left, attacks=2, repetitions=1
+*, x=0.198, y=0.255, frequency=1, skip=False, adjust=False
+    Showdown, direction=left, attacks=2, repetitions=1
+>, label=Bot, frequency=1, skip=False
+
+@, label=erdaFlare
+*, x=0.490, y=0.2, frequency=1, skip=False, adjust=False
+    Adjust, x=0.49, y=0.12, max_steps=5
+    DarkFlare, direction=right
+*, x=0.490, y=0.120, frequency=3, skip=False, adjust=False
+    Showdown, direction=left, attacks=2, repetitions=1
+*, x=0.781, y=0.2, frequency=1, skip=False, adjust=False
+    Adjust, x=0.781, y=0.13, max_steps=5
+    Wait, duration=0.4
+    ErdaShower, jump=False
+    Showdown, direction=right, attacks=2, repetitions=1
+*, x=0.484, y=0.219, frequency=1, skip=False, adjust=False
+    Fall, distance=0.05

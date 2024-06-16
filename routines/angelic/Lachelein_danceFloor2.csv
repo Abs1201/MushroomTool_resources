@@ -1,0 +1,9 @@
+*, x=0.179, y=0.190, frequency=1, skip=False, adjust=False
+    SoulSeeker, use_random=true, min=3, max=7
+*, x=0.385, y=0.190, frequency=1, skip=False, adjust=False
+    SoulSeeker, use_random=true, min=2, max=9
+*, x=0.598, y=0.162, frequency=1, skip=False, adjust=False
+    SoulSeeker, use_random=true, min=1, max=8
+*, x=0.709, y=0.251, frequency=20, skip=False, adjust=False
+    Adjust, x=0.709, y=0.251, max_steps=5
+    ErdaShower, jump=False

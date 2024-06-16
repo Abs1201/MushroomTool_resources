@@ -1,0 +1,5 @@
+*, x=0.184, y=0.222, frequency=1, skip=False, adjust=False
+    Adjust, x=0.209, y=0.222, max_steps=5
+    EruptionAndUp, direction=up, jump=False, sleepTime=90.0
+*, x=0.752, y=0.218, frequency=1, skip=False, adjust=False
+    Adjust, x=0.752, y=0.218, max_steps=5

@@ -1,0 +1,61 @@
+
+@, label=Bot
+*, x=0.301, y=0.242, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.301, y=0.242, frequency=2, skip=False, adjust=False
+    Walk, direction=left, duration=0.1
+    DragonVeinEruption
+*, x=0.458, y=0.242, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    WindingMountainRidge
+*, x=0.458, y=0.242, frequency=3, skip=False, adjust=False
+    Walk, direction=left, duration=0.1
+    DragonVeinEruption
+    TrueArachnidReflection
+*, x=0.597, y=0.242, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.597, y=0.242, frequency=2, skip=False, adjust=False
+    SurgingEssence
+*, x=0.758, y=0.244, frequency=5, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.65, y=0.244, frequency=1, skip=False, adjust=False
+    Adjust, x=0.65, y=0.244, max_steps=5
+    BigStretch
+    DragonVeinEruption
+>, label=Top2, frequency=5, skip=False
+
+@, label=Top
+*, x=0.65, y=0.18, frequency=1, skip=False, adjust=False
+    Adjust, x=0.65, y=0.128, max_steps=5
+    DragonVeinEruption
+    Walk, direction=left, duration=0.1
+    DragonVeinEruption
+*, x=0.466, y=0.128, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    EssenceSprinkle
+    WindingMountainRidge
+>, label=erda, frequency=2, skip=False
+>, label=Top_1, frequency=1, skip=False
+
+@, label=erda
+*, x=0.410, y=0.128, frequency=1, skip=False, adjust=False
+    Adjust, x=0.41, y=0.128, max_steps=5
+    Wait, duration=0.2
+    ErdaShower, jump=False
+
+@, label=Top_1
+*, x=0.321, y=0.128, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+>, label=Bot, frequency=1, skip=False
+
+@, label=Top2
+*, x=0.65, y=0.184, frequency=1, skip=False, adjust=False
+    Adjust, x=0.65, y=0.184, max_steps=2
+    DragonVeinEruption
+    BigStretch
+*, x=0.483, y=0.184, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.483, y=0.184, frequency=3, skip=False, adjust=False
+    WindingMountainRidge
+    Walk, direction=right, duration=4
+    DragonVeinEruption

@@ -1,0 +1,37 @@
+
+@, label=Bot
+*, x=0.256, y=0.462, frequency=2, skip=False, adjust=False
+    DeathStar
+*, x=0.256, y=0.462, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.385, y=0.397, frequency=3, skip=False, adjust=False
+    SuddenRaid
+*, x=0.385, y=0.397, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.449, y=0.333, frequency=5, skip=False, adjust=False
+    DeathStar
+*, x=0.449, y=0.333, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.494, y=0.462, frequency=4, skip=False, adjust=False
+    Adjust, x=0.494, y=0.462, max_steps=2
+    Wait, duration=0.6
+    DarklordsOmen, direction=right
+*, x=0.718, y=0.385, frequency=9, skip=False, adjust=False
+    SuddenRaid
+*, x=0.718, y=0.385, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.538, y=0.365, frequency=5, skip=False, adjust=False
+    Showdown
+    DeathStar
+*, x=0.391, y=0.353, frequency=1, skip=False, adjust=False
+    Showdown
+>, label=Top, frequency=10, skip=False
+>, label=Bot, frequency=1, skip=False
+
+@, label=Top
+*, x=0.494, y=0.083, frequency=1, skip=False, adjust=False
+    Adjust, x=0.494, y=0.083, max_steps=5
+    Showdown
+    Wait, duration=1
+    Adjust, x=0.494, y=0.083, max_steps=5
+    DarkFlare, direction=left

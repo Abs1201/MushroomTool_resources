@@ -1,0 +1,27 @@
+*, x=0.218, y=0.218, frequency=5, skip=False, adjust=False
+    Wait, duration=0.5
+    DarkFlare, direction=left
+*, x=0.218, y=0.218, frequency=4, skip=False, adjust=False
+    SuddenRaid
+*, x=0.218, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.408, y=0.218, frequency=3, skip=False, adjust=False
+    DeathStar
+*, x=0.408, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.592, y=0.218, frequency=3, skip=False, adjust=False
+    SuddenRaid
+*, x=0.592, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.782, y=0.218, frequency=6, skip=False, adjust=True
+    Wait, duration=0.5
+    DarkFlare, direction=right
+*, x=0.782, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.5, y=0.218, frequency=1, skip=False, adjust=False
+    Wait, duration=0.5
+    DarklordsOmen, direction=left
+*, x=0.5, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown
+*, x=0.3, y=0.218, frequency=1, skip=False, adjust=False
+    Showdown

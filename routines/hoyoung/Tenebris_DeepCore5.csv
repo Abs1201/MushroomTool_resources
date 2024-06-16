@@ -1,0 +1,48 @@
+
+@, label=Bot
+*, x=0.711, y=0.21, frequency=1, skip=False, adjust=False
+    Wait, duration=0.3
+    StoneTremor, direction=up
+    Fall, distance=0.05
+    Fan, direction=right, attacks=2, repetitions=1
+*, x=0.682, y=0.238, frequency=14, skip=False, adjust=False
+    TalismanClone
+*, x=0.615, y=0.25, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.523, y=0.25, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.418, y=0.188, frequency=13, skip=False, adjust=False
+    ConsumingFlames
+*, x=0.402, y=0.25, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.381, y=0.25, frequency=29, skip=False, adjust=False
+    Wait, duration=0.4
+    WrathofGods
+>, label=Vortex, frequency=7, skip=False
+*, x=0.297, y=0.238, frequency=7, skip=False, adjust=False
+    GhostFlame
+*, x=0.267, y=0.25, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+    Wait, duration=0.2
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=Vortex
+*, x=0.402, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.410, y=0.113, max_steps=5
+    MiracleTonic
+    Wait, duration=0.5
+    StarVortex, direction=left
+*, x=0.276, y=0.067, frequency=3, skip=False, adjust=False
+    Wait, duration=2
+*, x=0.556, y=0.15, frequency=1, skip=False, adjust=False
+    GoldBandedCudgel, direction=right, attacks=2, repetitions=1
+>, label=Gate, frequency=2, skip=False
+>, label=Bot, frequency=1, skip=False
+
+@, label=Gate
+*, x=0.67, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.715, y=0.146, max_steps=5
+    Wait, duration=1
+    newWarpGate
+    ButterflyDream

@@ -1,0 +1,30 @@
+*, x=0.750, y=0.333, frequency=1, skip=False, adjust=False
+    Adjust, x=0.833, y=0.333, max_steps=5
+    Wait, duration=0.2
+    DragonVeinEruption
+*, x=0.861, y=0.479, frequency=1, skip=False, adjust=False
+    Adjust, x=0.861, y=0.479, max_steps=5
+    Wait, duration=0.2
+    ErdaShower, direction=down, jump=False
+    Wait, duration=0.3
+*, x=0.618, y=0.479, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.486, y=0.479, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.285, y=0.479, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.125, y=0.479, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.222, y=0.181, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    WindingMountainRidge
+    EssenceSprinkle
+*, x=0.465, y=0.181, frequency=3, skip=False, adjust=False
+    Adjust, x=0.465, y=0.181, max_steps=5
+    Wait, duration=1
+    TrueArachnidReflection
+    DragonVeinEruption
+    EssenceSprinkle
+*, x=0.736, y=0.243, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    BigStretch

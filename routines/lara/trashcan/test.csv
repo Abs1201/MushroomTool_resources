@@ -1,0 +1,69 @@
+
+@, label=Bot
+*, x=0.343, y=0.297, frequency=1, skip=False, adjust=False
+    Adjust, x=0.343, y=0.297, max_steps=5
+    Walk, direction=left, duration=0.1
+    DragonVeinEruption
+*, x=0.45, y=0.297, frequency=1, skip=False, adjust=False
+    Wait, duration=0.2
+    DragonVeinEruption
+*, x=0.576, y=0.297, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    DragonVeinEruption
+    WindingMountainRidge
+    SurgingEssence
+*, x=0.657, y=0.297, frequency=1, skip=False, adjust=False
+    Adjust, x=0.657, y=0.297, max_steps=5
+    DragonVeinEruption
+>, label=erda, frequency=3, skip=False
+
+@, label=Mid
+*, x=0.657, y=0.22, frequency=1, skip=False, adjust=False
+    Adjust, x=0.657, y=0.22, max_steps=5
+    DragonVeinEruption
+    BigStretch
+
+@, label=Mid2
+*, x=0.508, y=0.220, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    WindingMountainRidge
+    Walk, direction=left, duration=0.85
+*, x=0.352, y=0.220, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    TrueArachnidReflection
+>, label=Bot, frequency=1, skip=False
+
+@, label=erda
+*, x=0.657, y=0.220, frequency=1, skip=False, adjust=False
+    Adjust, x=0.644, y=0.22, max_steps=2
+*, x=0.657, y=0.144, frequency=1, skip=False, adjust=False
+    Adjust, x=0.657, y=0.144, max_steps=5
+    Wait, duration=0.3
+    Walk, direction=left, duration=0.1
+    ErdaShower, direction=down, jump=False
+    Wait, duration=0.2
+    DragonVeinEruption
+>, label=meso, frequency=2, skip=False
+>, label=Mid2, frequency=1, skip=False
+
+@, label=meso
+*, x=0.657, y=0.068, frequency=1, skip=False, adjust=False
+    Adjust, x=0.657, y=0.068, max_steps=5
+    WakeUpCall
+    Walk, direction=left, duration=1.6
+*, x=0.508, y=0.144, frequency=1, skip=False, adjust=False
+    Adjust, x=0.508, y=0.144, max_steps=5
+    Wait, duration=0.5
+    Walk, direction=left, duration=0.6
+    DragonVeinEruption
+    BigStretch
+*, x=0.305, y=0.140, frequency=1, skip=False, adjust=False
+    Wait, duration=1.5
+    DragonVeinEruption
+*, x=0.288, y=0.220, frequency=1, skip=False, adjust=True
+    DragonVeinEruption
+    TrueArachnidReflection
+*, x=0.492, y=0.220, frequency=1, skip=False, adjust=True
+    SurgingEssence
+    Walk, direction=left, duration=1
+    DragonVeinEruption
