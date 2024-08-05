@@ -34,6 +34,7 @@
     DragonVeinEruption
     Walk, direction=left, duration=1
 *, x=0.599, y=0.156, frequency=1, skip=False, adjust=False
+    Yanus
     EssenceSprinkle
     DragonVeinEruption
 *, x=0.599, y=0.156, frequency=7, skip=False, adjust=False
@@ -50,6 +51,7 @@
     ErdaShower, jump=False
 *, x=0.401, y=0.151, frequency=2, skip=False, adjust=False
     Walk, direction=left, duration=0.4
+    Yanus
 *, x=0.21, y=0.156, frequency=1, skip=False, adjust=False
     EssenceSprinkle
     DragonVeinEruption
