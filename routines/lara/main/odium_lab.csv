@@ -39,7 +39,6 @@
     EssenceSprinkle
 *, x=0.650, y=0.128, frequency=1, skip=False, adjust=False
     DragonVeinEruption
-    Yanus
 *, x=0.547, y=0.090, frequency=1, skip=False, adjust=False
     EssenceSprinkle
 *, x=0.466, y=0.128, frequency=1, skip=False, adjust=False
@@ -47,7 +46,6 @@
     EssenceSprinkle
     WindingMountainRidge
 *, x=0.466, y=0.128, frequency=3, skip=False, adjust=False
-    Yanus
     Walk, direction=left, duration=1
 >, label=Top1, frequency=1, skip=False
 
@@ -72,15 +70,4 @@
     SurgingEssence
 *, x=0.483, y=0.184, frequency=1, skip=False, adjust=False
     DragonVeinEruption
->, label=meso, frequency=2, skip=True
 >, label=Bot, frequency=1, skip=False
-
-@, label=meso
-*, x=0.556, y=0.068, frequency=1, skip=False, adjust=False
-    Adjust, x=0.556, y=0.068, max_steps=5
-    Wait, duration=2
-    Walk, direction=left, duration=0.5
-*, x=0.397, y=0.068, frequency=1, skip=False, adjust=False
-    DragonVeinEruption
-    Walk, direction=left, duration=2
-    Wait, duration=0.5

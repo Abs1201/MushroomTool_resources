@@ -1,0 +1,13 @@
+*, x=0.176, y=0.326, frequency=3, skip=False, adjust=False
+    LarasConnection
+*, x=0.176, y=0.326, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.358, y=0.326, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.620, y=0.396, frequency=1, skip=False, adjust=False
+    Walk, direction=left, duration=0.5
+    DragonVeinEruption
+    Walk, direction=right, duration=0.25
+    DragonVeinEruption
+*, x=0.797, y=0.396, frequency=1, skip=False, adjust=False
+*, x=0.770, y=0.241, frequency=1, skip=False, adjust=False

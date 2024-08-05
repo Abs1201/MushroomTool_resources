@@ -1,0 +1,40 @@
+*, x=0.2, y=0.375, frequency=1, skip=False, adjust=False
+    Fall, distance=0.05
+    Wait, duration=0.5
+    Walk, direction=right, duration=0.2
+    DragonVeinEruption
+*, x=0.365, y=0.392, frequency=12, skip=False, adjust=False
+    LarasConnection
+*, x=0.365, y=0.392, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.530, y=0.409, frequency=6, skip=False, adjust=False
+    BigStretch
+*, x=0.575, y=0.409, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.740, y=0.392, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+*, x=0.735, y=0.32, frequency=1, skip=False, adjust=False
+    Adjust, x=0.735, y=0.243, max_steps=5
+    EssenceSprinkle
+*, x=0.735, y=0.243, frequency=2, skip=False, adjust=False
+    SurgingEssence
+*, x=0.602, y=0.249, frequency=1, skip=False, adjust=False
+    Yanus
+*, x=0.547, y=0.249, frequency=17, skip=False, adjust=False
+    TrueArachnidReflection
+*, x=0.547, y=0.249, frequency=3, skip=False, adjust=False
+    WindingMountainRidge
+*, x=0.547, y=0.249, frequency=4, skip=False, adjust=False
+    BigStretch
+*, x=0.547, y=0.249, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.403, y=0.243, frequency=5, skip=False, adjust=False
+    BigStretch
+*, x=0.365, y=0.243, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.403, y=0.243, frequency=7, skip=False, adjust=False
+    Wait, duration=1
+    ErdaShower, jump=False
+*, x=0.215, y=0.249, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+    Fall, distance=0.05

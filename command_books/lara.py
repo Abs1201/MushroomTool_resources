@@ -38,6 +38,7 @@ class Key:
     MENIFESTATION_WHERE_THE_RIVER_COURSES = 'delete'
     SURGING_ESSENCE = 'g'
     LARAS_CONNECTION = '5'
+    YANUS = 'delete'
     
 
 
@@ -250,6 +251,10 @@ class LeapUp(Command):
 class LarasConnection(Command):
     def main(self):
         press(Key.LARAS_CONNECTION, 1)
+        
+class Yanus(Command):
+    def main(self):
+        press(Key.YANUS, 1)
 
          
 # class EruptionAndUp(Command):

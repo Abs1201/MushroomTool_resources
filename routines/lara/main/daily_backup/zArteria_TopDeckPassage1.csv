@@ -42,6 +42,7 @@
 *, x=0.420, y=0.314, frequency=1, skip=False, adjust=False
     EssenceSprinkle
 *, x=0.234, y=0.314, frequency=1, skip=False, adjust=False
+    Yanus
     EssenceSprinkle
 >, label=erda, frequency=4, skip=False
 *, x=0.21, y=0.26, frequency=1, skip=False, adjust=False

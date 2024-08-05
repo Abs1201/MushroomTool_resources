@@ -1,0 +1,40 @@
+*, x=0.186, y=0.347, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.37, y=0.311, frequency=5, skip=False, adjust=False
+    Spotlight
+*, x=0.37, y=0.311, frequency=1, skip=False, adjust=False
+    CelestialRoar
+>, label=burst, frequency=7, skip=False
+>, label=ref, frequency=1, skip=False
+
+@, label=burst
+*, x=0.551, y=0.299, frequency=1, skip=False, adjust=False
+    SparkleBurst
+>, label=bursted, frequency=1, skip=False
+
+@, label=ref
+*, x=0.551, y=0.299, frequency=15, skip=False, adjust=False
+    Reflection
+
+@, label=bursted
+*, x=0.551, y=0.299, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.713, y=0.281, frequency=2, skip=False, adjust=False
+    Supernova
+*, x=0.713, y=0.281, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.856, y=0.23, frequency=1, skip=False, adjust=False
+    CelestialRoar
+    Adjust, x=0.856, y=0.186, max_steps=5
+    CelestialRoar
+*, x=0.647, y=0.2, frequency=5, skip=False, adjust=False
+    FinaleRibbon
+*, x=0.63, y=0.2, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.26, y=0.186, frequency=1, skip=False, adjust=False
+    CelestialRoar
+*, x=0.26, y=0.186, frequency=7, skip=False, adjust=False
+    Adjust, x=0.293, y=0.186, max_steps=5
+    ErdaShower, jump=False
+*, x=0.186, y=0.347, frequency=2, skip=False, adjust=False
+    Fall, distance=0.05

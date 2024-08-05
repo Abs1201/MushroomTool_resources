@@ -21,6 +21,9 @@ class Key:
     NOVA_WARRIOR = 'f2'
     ROLL_OF_THE_DICE = 'f3'
     DECENT_COMBAT_ORDERS='f4'
+    TERMS_CONDITIONS='1'
+    MASCOT='5'
+    EXALTATION='4'
 
     # Skills
     CELESTIAL_ROAR = 'f'
@@ -30,6 +33,10 @@ class Key:
     SUPERNOVA = 'w'
     PINK_PUMMEL='d'
     SOUL_SEEKER='s'
+    SPOTLIGHT='c'
+    SPARKLE_BURST='q'
+    REFLECTION = 'v'
+    
     
     
 
@@ -102,7 +109,7 @@ class Adjust(Command):
                         press(Key.JUMP, 1, down_time=0.1)
                         key_up('down')
                         time.sleep(0.05)
-                    time.sleep(0.5)
+                    time.sleep(0.75)
                     if config.bot.rune_active:
                         time.sleep(1.5)
                     counter -= 1
@@ -115,6 +122,7 @@ class Buff(Command):
 
     def __init__(self):
         super().__init__(locals())
+        self.cd60_buff_time=0
         self.cd120_buff_time = 0
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
@@ -125,7 +133,11 @@ class Buff(Command):
     def main(self):
         buffs = [Key.ROLL_OF_THE_DICE, Key.DECENT_COMBAT_ORDERS]
         now = time.time()
-        
+        if self.cd60_buff_time==0 or now-self.cd60_buff_time>60:
+            press(Key.TERMS_CONDITIONS, 2)
+            press(Key.EXALTATION, 2)
+            press(Key.MASCOT,2)
+            self.cd60_buff_time=now
         if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
 	        press(Key.NOVA_WARRIOR, 2)
 	        self.cd900_buff_time = now
@@ -134,11 +146,6 @@ class Buff(Command):
 		        press(key, 3, up_time=0.3)
 	        self.decent_buff_time = now		
 
-
-class DragonVeinEruption(Command):
-    """uses eruption once"""
-    def main(self):
-        press(Key.DRAGON_VEIN_ERUPTION, 3)
 
 class CelestialRoar(Command):
     def main(self):
@@ -188,3 +195,15 @@ class ErdaShower(Command):
         press(Key.ERDA_SHOWER, num_presses)
         if settings.record_layout:
 	        config.layout.add(*config.player_pos)
+         
+class Spotlight(Command):
+    def main(self):
+        press(Key.SPOTLIGHT, 2)
+        
+class SparkleBurst(Command):
+    def main(self):
+        press(Key.SPARKLE_BURST, 2)
+        
+class Reflection(Command):
+    def main(self):
+        press(Key.REFLECTION, 2)

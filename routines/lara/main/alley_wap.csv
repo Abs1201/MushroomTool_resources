@@ -33,7 +33,6 @@
 @, label=Top
 *, x=0.712, y=0.26, frequency=1, skip=False, adjust=False
     Adjust, x=0.668, y=0.177, max_steps=5
->, label=meso, frequency=7, skip=True
 *, x=0.722, y=0.2, frequency=1, skip=False, adjust=False
     Walk, direction=right, duration=0.6
     EssenceSprinkle
@@ -62,18 +61,3 @@
     Fall, distance=0.05
 *, x=0.480, y=0.318, frequency=97, skip=False, adjust=False
 >, label=Bot, frequency=1, skip=False
-
-@, label=meso
-*, x=0.798, y=0.111, frequency=1, skip=False, adjust=False
-    Adjust, x=0.798, y=0.111, max_steps=5
-    Wait, duration=0.4
-    Walk, direction=left, duration=1
-    DragonVeinEruption
-*, x=0.505, y=0.111, frequency=1, skip=False, adjust=False
-    Wait, duration=1
-*, x=0.333, y=0.111, frequency=1, skip=False, adjust=False
-*, x=0.162, y=0.111, frequency=1, skip=False, adjust=False
-    EssenceSprinkle
-    Walk, direction=right, duration=0.5
-    Fall, distance=0.05
-    Wait, duration=1
