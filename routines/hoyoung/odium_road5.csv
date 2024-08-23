@@ -1,0 +1,72 @@
+
+@, label=Bot
+*, x=0.838, y=0.198, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StoneTremor, direction=up
+    Fall, distance=0.01
+    ThousandTonStone
+>, label=erda, frequency=7, skip=False
+
+@, label=Bot2
+*, x=0.817, y=0.325, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.746, y=0.29, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.558, y=0.29, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.433, y=0.3, frequency=8, skip=False, adjust=False
+    Wait, duration=0.1
+    TalismanClone
+*, x=0.411, y=0.29, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.25, y=0.3, frequency=3, skip=False, adjust=False
+    ConsumingFlames
+>, label=vortex, frequency=6, skip=False
+*, x=0.24, y=0.305, frequency=6, skip=False, adjust=False
+    GhostFlame
+*, x=0.234, y=0.315, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+    Wait, duration=0.2
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=vortex
+*, x=0.213, y=0.269, frequency=1, skip=False, adjust=False
+    Adjust, x=0.213, y=0.198, max_steps=2
+    Wait, duration=1
+*, x=0.213, y=0.198, frequency=3, skip=False, adjust=False
+    Adjust, x=0.213, y=0.132, max_steps=1
+    Wait, duration=0.5
+*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
+    Adjust, x=0.335, y=0.152, max_steps=5
+*, x=0.335, y=0.152, frequency=2, skip=False, adjust=False
+    Wait, duration=0.1
+    MiracleTonic
+*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
+    Adjust, x=0.335, y=0.152, max_steps=5
+    StarVortex, direction=left
+>, label=gate, frequency=2, skip=False
+*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=erda
+*, x=0.761, y=0.264, frequency=1, skip=False, adjust=False
+    Walk, direction=right, duration=1
+    ErdaShower, jump=False
+>, label=Bot2, frequency=1, skip=False
+
+@, label=gate
+*, x=0.558, y=0.198, frequency=1, skip=False, adjust=False
+    Fan, direction=right, attacks=2, repetitions=1
+*, x=0.79, y=0.198, frequency=1, skip=False, adjust=False
+    Adjust, x=0.843, y=0.198, max_steps=9
+    Wait, duration=0.1
+    ButterflyDream
+    Wait, duration=0.03
+    newWarpGate
+    Walk, direction=left, duration=0.01
+*, x=0.807, y=0.127, frequency=1, skip=False, adjust=False
+    Adjust, x=0.807, y=0.127, max_steps=3
+    Wait, duration=2

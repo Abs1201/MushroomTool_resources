@@ -1,0 +1,46 @@
+
+@, label=main
+*, x=0.224, y=0.4, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    Walk, direction=right, duration=0.3
+    DragonVeinEruption
+*, x=0.224, y=0.4, frequency=3, skip=False, adjust=False
+    LarasConnection
+*, x=0.224, y=0.4, frequency=3, skip=False, adjust=False
+    Adjust, x=0.180, y=0.366, max_steps=5
+*, x=0.435, y=0.4, frequency=1, skip=False, adjust=False
+    Wait, duration=0.25
+    DragonVeinEruption
+*, x=0.627, y=0.4, frequency=1, skip=False, adjust=False
+    Wait, duration=0.25
+    DragonVeinEruption
+*, x=0.627, y=0.4, frequency=2, skip=False, adjust=False
+    BigStretch
+*, x=0.832, y=0.4, frequency=1, skip=False, adjust=False
+    Wait, duration=0.25
+    DragonVeinEruption
+>, label=emplace, frequency=7, skip=False
+>, label=main, frequency=1, skip=False
+
+@, label=emplace
+*, x=0.783, y=0.36, frequency=1, skip=False, adjust=False
+    Adjust, x=0.783, y=0.286, max_steps=5
+    Wait, duration=0.2
+    Yanus
+    Walk, direction=left, duration=1
+*, x=0.497, y=0.286, frequency=1, skip=False, adjust=False
+    Wait, duration=0.5
+    Yanus
+
+@, label=meso
+*, x=0.528, y=0.205, frequency=1, skip=False, adjust=False
+    Adjust, x=0.528, y=0.205, max_steps=5
+    Wait, duration=1
+*, x=0.317, y=0.205, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    Fall, distance=0.05
+*, x=0.323, y=0.286, frequency=1, skip=False, adjust=False
+    Wait, duration=0.25
+    ErdaShower, jump=False
+    WindingMountainRidge
+    Fall, distance=0.05

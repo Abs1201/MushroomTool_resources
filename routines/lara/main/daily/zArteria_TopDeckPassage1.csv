@@ -8,12 +8,15 @@
     LarasConnection
 *, x=0.230, y=0.4, frequency=3, skip=False, adjust=False
     Adjust, x=0.186, y=0.366, max_steps=5
-*, x=0.455, y=0.4, frequency=1, skip=False, adjust=False
+*, x=0.525, y=0.4, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.46, y=0.4, frequency=4, skip=False, adjust=False
+*, x=0.525, y=0.4, frequency=2, skip=False, adjust=False
+    Walk, direction=left, duration=0.4
+    DragonVeinEruption
+*, x=0.525, y=0.4, frequency=4, skip=False, adjust=False
     BigStretch
-*, x=0.67, y=0.4, frequency=1, skip=False, adjust=False
+*, x=0.725, y=0.4, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
 *, x=0.857, y=0.4, frequency=1, skip=False, adjust=False

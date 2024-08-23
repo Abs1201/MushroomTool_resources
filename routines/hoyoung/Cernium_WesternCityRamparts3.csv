@@ -35,6 +35,10 @@
 @, label=vortex
 *, x=0.269, y=0.17, frequency=1, skip=False, adjust=False
     Adjust, x=0.271, y=0.118, max_steps=2
+    Wait, duration=1
+*, x=0.277, y=0.046, frequency=2, skip=False, adjust=False
+    Adjust, x=0.277, y=0.046, max_steps=1
+    Wait, duration=0.5
 *, x=0.375, y=0.12, frequency=1, skip=False, adjust=False
     Adjust, x=0.379, y=0.084, max_steps=5
 *, x=0.374, y=0.12, frequency=2, skip=False, adjust=False
@@ -63,6 +67,6 @@
     Wait, duration=0.03
     newWarpGate
     Walk, direction=left, duration=0.01
-*, x=0.815, y=0.076, frequency=4, skip=False, adjust=False
+*, x=0.815, y=0.076, frequency=1, skip=False, adjust=False
     Adjust, x=0.815, y=0.076, max_steps=3
     Wait, duration=2
