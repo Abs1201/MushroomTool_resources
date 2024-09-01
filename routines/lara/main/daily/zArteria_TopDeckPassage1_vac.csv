@@ -35,20 +35,11 @@
 *, x=0.758, y=0.286, frequency=1, skip=False, adjust=False
     Walk, direction=left, duration=1
     TrueArachnidReflection
-*, x=0.472, y=0.286, frequency=1, skip=False, adjust=False
+*, x=0.51, y=0.286, frequency=1, skip=False, adjust=False
     Wait, duration=0.5
     Yanus
-
-@, label=meso
-*, x=0.509, y=0.205, frequency=1, skip=False, adjust=False
-    Adjust, x=0.509, y=0.205, max_steps=5
-    Wait, duration=1
-    Walk, direction=right, duration=0.5
-*, x=0.286, y=0.205, frequency=1, skip=False, adjust=False
-    Wait, duration=1
-    Fall, distance=0.05
-*, x=0.286, y=0.286, frequency=1, skip=False, adjust=False
-    Wait, duration=0.4
+*, x=0.48, y=0.286, frequency=1, skip=False, adjust=False
+    Walk, direction=left, duration=1.75
     ErdaShower, jump=False
 *, x=0.286, y=0.286, frequency=1, skip=False, adjust=False
     WindingMountainRidge
