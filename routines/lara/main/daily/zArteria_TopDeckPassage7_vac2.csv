@@ -23,6 +23,12 @@
     Wait, duration=0.34
     DragonVeinEruption
 >, label=emplace, frequency=7, skip=False
+*, x=0.567, y=0.35, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.433, y=0.353, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.203, y=0.35, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
 >, label=main, frequency=1, skip=False
 
 @, label=emplace
@@ -33,11 +39,12 @@
 *, x=0.758, y=0.286, frequency=1, skip=False, adjust=False
     Walk, direction=left, duration=1
     TrueArachnidReflection
-*, x=0.54, y=0.286, frequency=1, skip=False, adjust=False
+*, x=0.54, y=0.25, frequency=1, skip=False, adjust=False
     Wait, duration=0.5
     Yanus
 *, x=0.32, y=0.23, frequency=1, skip=False, adjust=False
-    Walk, direction=left, duration=0.3
+    Wait, duration=0.25
+    Walk, direction=left, duration=0.4
     Yanus
 *, x=0.32, y=0.25, frequency=1, skip=False, adjust=False
     WindingMountainRidge

@@ -27,20 +27,23 @@
 *, x=0.862, y=0.239, frequency=4, skip=False, adjust=False
     Walk, direction=left, duration=0.1
     LarasConnection
-*, x=0.807, y=0.249, frequency=1, skip=False, adjust=False
+*, x=0.807, y=0.249, frequency=7, skip=False, adjust=False
     Yanus
 *, x=0.856, y=0.23, frequency=1, skip=False, adjust=False
     Wait, duration=0.2
     Fall, distance=0.01
     Wait, duration=0.2
     DragonVeinEruption
-*, x=0.660, y=0.314, frequency=3, skip=False, adjust=False
+*, x=0.660, y=0.314, frequency=7, skip=False, adjust=False
+    Yanus
     TrueArachnidReflection
 *, x=0.601, y=0.314, frequency=1, skip=False, adjust=False
     DragonVeinEruption
     BigStretch
 *, x=0.420, y=0.314, frequency=1, skip=False, adjust=False
     EssenceSprinkle
+*, x=0.42, y=0.314, frequency=7, skip=False, adjust=False
+    Yanus
 *, x=0.234, y=0.314, frequency=1, skip=False, adjust=False
     EssenceSprinkle
 >, label=erda, frequency=4, skip=False
