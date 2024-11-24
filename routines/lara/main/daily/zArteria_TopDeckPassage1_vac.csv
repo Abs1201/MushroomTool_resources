@@ -44,3 +44,5 @@
 *, x=0.286, y=0.286, frequency=1, skip=False, adjust=False
     WindingMountainRidge
     Fall, distance=0.05
+    Wait, duration=0.5
+    Yanus

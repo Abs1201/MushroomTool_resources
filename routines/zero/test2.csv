@@ -1,0 +1,3 @@
+*, x=0.368, y=0.135, frequency=1, skip=False, adjust=False
+    BurstStep, direction=up, attacks=1, repetitions=1
+    Wait, duration=3

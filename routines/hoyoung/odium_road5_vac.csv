@@ -24,6 +24,8 @@
 >, label=vortex, frequency=6, skip=False
 *, x=0.24, y=0.305, frequency=6, skip=False, adjust=False
     GhostFlame
+*, x=0.234, y=0.315, frequency=4, skip=False, adjust=False
+    GhostFlame
 *, x=0.234, y=0.315, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
     Wait, duration=0.2
@@ -37,16 +39,16 @@
 *, x=0.213, y=0.198, frequency=3, skip=False, adjust=False
     Adjust, x=0.213, y=0.132, max_steps=1
     Wait, duration=0.5
-*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
-    Adjust, x=0.335, y=0.152, max_steps=5
-*, x=0.335, y=0.152, frequency=2, skip=False, adjust=False
+*, x=0.25, y=0.152, frequency=1, skip=False, adjust=False
+    Adjust, x=0.32, y=0.152, max_steps=5
+*, x=0.25, y=0.152, frequency=2, skip=False, adjust=False
     Wait, duration=0.1
     MiracleTonic
-*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
-    Adjust, x=0.335, y=0.152, max_steps=5
+*, x=0.25, y=0.152, frequency=1, skip=False, adjust=False
+    Adjust, x=0.32, y=0.152, max_steps=5
     StarVortex, direction=left
 >, label=gate, frequency=2, skip=False
-*, x=0.335, y=0.152, frequency=1, skip=False, adjust=False
+*, x=0.25, y=0.152, frequency=1, skip=False, adjust=False
     Wait, duration=1
     useWarpGate
 >, label=Bot, frequency=1, skip=False

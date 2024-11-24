@@ -1,16 +1,17 @@
 
 @, label=main
-*, x=0.182, y=0.385, frequency=7, skip=False, adjust=False
+*, x=0.182, y=0.385, frequency=6, skip=False, adjust=False
     Adjust, x=0.187, y=0.299, max_steps=5
     Walk, direction=left, duration=0.2
     ErdaShower, jump=False
-    Fall, distance=0.05
 *, x=0.182, y=0.35, frequency=1, skip=False, adjust=False
     DragonVeinEruption
     Walk, direction=right, duration=0.25
     DragonVeinEruption
 *, x=0.182, y=0.35, frequency=5, skip=False, adjust=False
     LarasConnection
+*, x=0.241, y=0.35, frequency=1, skip=False, adjust=False
+    Walk, direction=right, duration=0.5
 *, x=0.561, y=0.325, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
@@ -46,9 +47,8 @@
     Wait, duration=0.25
     Walk, direction=left, duration=0.4
     Yanus
-*, x=0.267, y=0.15, frequency=1, skip=False, adjust=False
-    Adjust, x=0.267, y=0.144, max_steps=5
-    Adjust, x=0.267, y=0.144, max_steps=5
+*, x=0.267, y=0.144, frequency=1, skip=False, adjust=False
+    Adjust, x=0.267, y=0.13, max_steps=5
     Wait, duration=1.5
 *, x=0.32, y=0.25, frequency=1, skip=False, adjust=False
     WindingMountainRidge
