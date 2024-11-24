@@ -5,11 +5,11 @@
     Wait, duration=0.5
     Fall, distance=0.05
     Wait, duration=0.1
-    WindCutter, direction=left, attacks=4, repetitions=1
+    GigaCrash, direction=left, attacks=3, repetitions=2
 *, x=0.737, y=0.22, frequency=1, skip=False, adjust=False
     Adjust, x=0.737, y=0.144, max_steps=5
     Wait, duration=0.4
-    GigaCrash, direction=left, attacks=3, repetitions=2
+    WindCutter, direction=left, attacks=4, repetitions=1
 >, label=install, frequency=10, skip=False
 >, label=root, frequency=1, skip=False
 
