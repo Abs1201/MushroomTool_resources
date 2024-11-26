@@ -6,11 +6,14 @@
     Fall, distance=0.05
     Wait, duration=0.1
     GigaCrash, direction=left, attacks=3, repetitions=2
+*, x=0.731, y=0.24, frequency=17, skip=False, adjust=False
+    FlashCut, direction=left, attacks=3, repetitions=2
+    Wait, duration=0.4
 *, x=0.737, y=0.22, frequency=1, skip=False, adjust=False
     Adjust, x=0.737, y=0.144, max_steps=5
     Wait, duration=0.4
-    WindCutter, direction=left, attacks=4, repetitions=1
->, label=install, frequency=10, skip=False
+    WindCutter, direction=left, attacks=3, repetitions=2
+>, label=install, frequency=9, skip=False
 >, label=root, frequency=1, skip=False
 
 @, label=install
@@ -18,9 +21,12 @@
     Fall, distance=0.05
     Fall, distance=0.05
     ShodowFlash
+*, x=0.48, y=0.305, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    ShodowRain
 *, x=0.180, y=0.305, frequency=1, skip=False, adjust=False
-    Wait, duration=0.2
+    Wait, duration=0.8
     ErdaShower, jump=False
-    Wait, duration=0.4
+    Wait, duration=0.5
 *, x=0.222, y=0.305, frequency=1, skip=False, adjust=False
     ShodowFlash

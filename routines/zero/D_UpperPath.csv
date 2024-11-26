@@ -1,16 +1,16 @@
 
 @, label=root
 *, x=0.307, y=0.13, frequency=1, skip=False, adjust=False
+    JumpBurstStep, direction=up
     Wait, duration=1
-    WindCutter, direction=right, attacks=4, repetitions=1
+    WindCutter, direction=right, attacks=5, repetitions=1
     Wait, duration=1
     Fall, distance=0.05
 *, x=0.307, y=0.15, frequency=1, skip=False, adjust=False
     Adjust, x=0.307, y=0.19, max_steps=5
     Wait, duration=1
-    GigaCrash, direction=right, attacks=4, repetitions=1
+    GigaCrash, direction=right, attacks=5, repetitions=1
     Wait, duration=1
-    JumpBurstStep, direction=up
 >, label=install, frequency=9, skip=False
 >, label=root, frequency=1, skip=False
 

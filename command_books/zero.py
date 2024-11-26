@@ -199,6 +199,19 @@ class BurstStep(Command):
             time.sleep(0.3)
         else:
             time.sleep(0.2)
+            
+class JumpBurstStep(Command):
+    def __init__(self, direction):
+        super().__init__(locals())
+        self.direction = settings.validate_vertical_arrows(direction)
+        
+    def main(self):
+        press(Key.JUMP, 1)
+        key_down(self.direction)
+        press(Key.BURST_STEP, 2, up_time=0.05)
+        key_up(self.direction)
+        time.sleep(0.2)
+        
   	   
 class WindCutter(Command):
 
