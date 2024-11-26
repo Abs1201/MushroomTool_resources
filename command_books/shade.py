@@ -139,24 +139,15 @@ class Buff(Command):
     def main(self):
         buffs = [Key.HOLY_SYMBOL, Key.DICE]
         now = time.time()
-        # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
-	    #     press(Key.GHOST_FLAME, 2)
-	    #     self.cd60_buff_time = now
-        # if self.cd100_buff_time == 0 or now - self.cd100_buff_time > 100:
-	    #     press(Key.BUTTERFLY_DREAM, 2)
-	    #     self.cd100_buff_time = now
-        # if self.cd200_buff_time == 0 or now - self.cd200_buff_time > 200:
-        #     self.cd200_buff_time = now
-	    #     press(Key.WEAPON_AURA, 1)
-        #     press(Key.HOLY_SYMBOL, 3, up_time=0.3)
-         
-        # if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	    #     press(Key.ANIMA_WARRIORS, 2)
-	    #     self.cd900_buff_time = now
+
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 2, up_time=0.3)
-	        self.decent_buff_time = now		
+            for key in buffs:
+                press(key, 2, up_time=0.3)
+            self.decent_buff_time = now
+
+        if self.decent_buff_time == 0 or now - self.decent_buff_time > 120:
+            self.cd120_buff_time = now
+            press(Key.HEROIC_MEMORIES, 2, up_time=0.3)
 
 class ErdaShower(Command):
     
@@ -177,11 +168,11 @@ class SpirityFrenzy(Command):
         
 class FoxGodFlash(Command):
     def main(self):
-        press(Key.FOX_GOD_FLASH)
+        press(Key.FOX_GOD_FLASH, 1, down_time= 0.3)
         
 class FoxMarbleFusion(Command):
     def main(self):
-        press(Key.FOX_MARBLE_FUSION)
+        press(Key.FOX_MARBLE_FUSION, 1, down_time=0.3)
         
     
 class BombPunch_nodir(Command):
@@ -202,14 +193,12 @@ class BombPunch(Command):
   	   
 class SpiritClaw(Command):
     def main(self):
-        press(Key.SPIRIT_CLAW)
+        press(Key.SPIRIT_CLAW, 2)
            
 
 class SpiritGate(Command):
     def main(self):
-        press(Key.SPIRIT_GATE) 
+        press(Key.SPIRIT_GATE, 2) 
         
-class SpiritClaw(Command):
-    def main(self):
-        press(Key.SPIRIT_CLAW)
+
 
