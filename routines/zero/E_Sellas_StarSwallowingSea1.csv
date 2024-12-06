@@ -1,0 +1,32 @@
+
+@, label=root
+*, x=0.307, y=0.13, frequency=1, skip=False, adjust=False
+    JumpBurstStep, direction=up
+    Wait, duration=1
+    WindCutter, direction=right, attacks=5, repetitions=1
+    Wait, duration=1
+    Fall, distance=0.05
+    Wait, duration=0.8
+
+@, label=a
+*, x=0.307, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.307, y=0.19, max_steps=5
+    Wait, duration=1
+    GigaCrash, direction=right, attacks=5, repetitions=1
+    Wait, duration=1
+>, label=install, frequency=9, skip=False
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.307, y=0.150, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    ShodowFlash
+*, x=0.424, y=0.095, frequency=1, skip=False, adjust=False
+*, x=0.740, y=0.12, frequency=1, skip=False, adjust=False
+    Adjust, x=0.74, y=0.095, max_steps=5
+    Wait, duration=0.6
+    ErdaShower, jump=False
+    Wait, duration=0.5
+*, x=0.740, y=0.12, frequency=1, skip=False, adjust=False
+    ShodowFlash
+>, label=a, frequency=1, skip=False

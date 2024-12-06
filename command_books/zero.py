@@ -234,7 +234,18 @@ class WindCutter(Command):
             time.sleep(0.3)
         else:
             time.sleep(0.2)
-           
+
+class WindCutter2(Command):
+
+    def __init__(self, direction, attacks=3, downTime=0.5):
+        super().__init__(locals())
+        self.direction = settings.validate_horizontal_arrows(direction)
+        self.attacks = int(attacks)
+        self.downTime = float(downTime)
+
+    def main(self):
+        press(self.direction)
+        press(Key.WIND_CUTTER, self.attacks, self.downTime)
            
 class GigaCrash(Command):
 
@@ -259,6 +270,18 @@ class GigaCrash(Command):
             time.sleep(0.3)
         else:
             time.sleep(0.2)
+            
+class GigaCrash2(Command):
+
+    def __init__(self, direction, attacks=3, downTime=0.5):
+        super().__init__(locals())
+        self.direction = settings.validate_horizontal_arrows(direction)
+        self.attacks = int(attacks)
+        self.downTime = float(downTime)
+
+    def main(self):
+        press(self.direction)
+        press(Key.GIGA_CRASH, self.attacks, self.downTime)
 
 class FlashCut(Command):
 
@@ -288,3 +311,7 @@ class ShodowRain(Command):
 class ShodowFlash(Command):
     def main(self):
         press(Key.SHADOW_FLASH,1)
+
+class PressUp(Command):
+    def main(self):
+        press('up', 1, down_time=0.1)

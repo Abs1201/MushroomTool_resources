@@ -2,7 +2,7 @@
 @, label=root
 *, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
     Wait, duration=1.5
-    GigaCrash, direction=left, attacks=5, repetitions=1
+    GigaCrash2, direction=left, attacks=3, downTime=.5
     Wait, duration=1.5
 >, label=install, frequency=9, skip=False
 *, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
@@ -12,7 +12,7 @@
 @, label=a
 *, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
     Wait, duration=1.5
-    WindCutter, direction=right, attacks=5, repetitions=1
+    WindCutter2, direction=right, attacks=3, downTime=.5
     Wait, duration=1.5
 >, label=meso, frequency=8, skip=False
 *, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
