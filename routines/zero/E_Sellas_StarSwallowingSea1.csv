@@ -22,9 +22,14 @@
 
 @, label=install
 *, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
+    ShodowFlash
+*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
     Walk, direction=right, duration=1
     Wait, duration=1
     ErdaShower, jump=False
+*, x=0.72, y=0.277, frequency=1, skip=False, adjust=False
+    ShodowFlash
+    Wait, duration=0.5
 *, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
     Adjust, x=0.543, y=0.277, max_steps=5
     PressUp

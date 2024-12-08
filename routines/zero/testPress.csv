@@ -1,42 +1,49 @@
 
 @, label=root
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
+*, x=0.266, y=0.277, frequency=1, skip=False, adjust=False
     Wait, duration=1.5
-    GigaCrash2, direction=left, attacks=3, downTime=.5
+    GigaCrash2, direction=right, attacks=3, downTime=.5
     Wait, duration=1.5
 >, label=install, frequency=7, skip=False
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Adjust, x=0.543, y=0.277, max_steps=5
-    PressUp
+*, x=0.266, y=0.277, frequency=1, skip=False, adjust=False
+    Adjust, x=0.266, y=0.277, max_steps=5
 
 @, label=a
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
+*, x=0.266, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.266, y=0.092, max_steps=5
+*, x=0.266, y=0.15, frequency=1, skip=False, adjust=False
     Wait, duration=1.5
     WindCutter2, direction=right, attacks=3, downTime=.5
     Wait, duration=1.5
 >, label=meso, frequency=8, skip=False
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
-    Adjust, x=0.301, y=0.092, max_steps=5
-    PressUp
+*, x=0.266, y=0.15, frequency=1, skip=False, adjust=False
+    Fall, distance=0.05
+    Wait, duration=0.4
+    Fall, distance=0.05
 >, label=root, frequency=1, skip=False
 
 @, label=install
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Walk, direction=right, duration=1
-    Wait, duration=1
+*, x=0.266, y=0.277, frequency=1, skip=False, adjust=False
+    ShodowFlash
+*, x=0.636, y=0.277, frequency=1, skip=False, adjust=False
+    Adjust, x=0.578, y=0.277, max_steps=5
+    Walk, direction=right, duration=0.3
     ErdaShower, jump=False
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Adjust, x=0.543, y=0.277, max_steps=5
-    PressUp
+*, x=0.636, y=0.277, frequency=1, skip=False, adjust=False
+    Wait, duration=0.5
+    ShodowFlash
+*, x=0.266, y=0.277, frequency=1, skip=False, adjust=False
+    Adjust, x=0.266, y=0.277, max_steps=5
+    Wait, duration=0.4
 >, label=a, frequency=1, skip=False
 
 @, label=meso
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
+*, x=0.266, y=0.15, frequency=1, skip=False, adjust=False
     ShodowFlash
 *, x=0.7, y=0.121, frequency=1, skip=False, adjust=False
     Wait, duration=2
     ShodowFlash
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
+*, x=0.266, y=0.15, frequency=1, skip=False, adjust=False
     Wait, duration=0.5
     Adjust, x=0.301, y=0.092, max_steps=5
     PressUp

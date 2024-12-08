@@ -1,42 +1,33 @@
 
 @, label=root
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Wait, duration=1.5
-    GigaCrash, direction=left, attacks=5, repetitions=1
-    Wait, duration=1.5
+*, x=0.33, y=0.15, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    GigaCrash2, direction=right, attacks=3, downTime=0.5
+    Wait, duration=1
 >, label=install, frequency=9, skip=False
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Adjust, x=0.543, y=0.277, max_steps=5
-    PressUp
 
 @, label=a
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
+*, x=0.33, y=0.13, frequency=1, skip=False, adjust=False
     Wait, duration=1.5
-    WindCutter, direction=right, attacks=5, repetitions=1
+    JumpBurstStep, direction=up
+    Wait, duration=0.5
+    Adjust, x=0.29, y=0.095, max_steps=5
+    WindCutter2, direction=right, attacks=3, downTime=0.5
     Wait, duration=1.5
->, label=meso, frequency=8, skip=False
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
-    Adjust, x=0.301, y=0.092, max_steps=5
-    PressUp
+    Fall, distance=0.05
+    Wait, duration=0.8
 >, label=root, frequency=1, skip=False
 
 @, label=install
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Walk, direction=right, duration=1
-    Wait, duration=1
-    ErdaShower, jump=False
-*, x=0.543, y=0.277, frequency=1, skip=False, adjust=False
-    Adjust, x=0.543, y=0.277, max_steps=5
-    PressUp
->, label=a, frequency=1, skip=False
-
-@, label=meso
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
-    ShodowFlash
-*, x=0.7, y=0.121, frequency=1, skip=False, adjust=False
-    Wait, duration=1
-    ShodowFlash
-*, x=0.301, y=0.092, frequency=1, skip=False, adjust=False
+*, x=0.307, y=0.150, frequency=1, skip=False, adjust=False
     Wait, duration=0.5
-    Adjust, x=0.301, y=0.092, max_steps=5
-    PressUp
+    ShodowFlash
+*, x=0.45, y=0.12, frequency=1, skip=False, adjust=False
+*, x=0.740, y=0.12, frequency=1, skip=False, adjust=False
+    Adjust, x=0.74, y=0.095, max_steps=5
+    Wait, duration=0.6
+    ErdaShower, jump=False
+    Wait, duration=0.5
+*, x=0.740, y=0.12, frequency=1, skip=False, adjust=False
+    ShodowFlash
+>, label=a, frequency=1, skip=False
