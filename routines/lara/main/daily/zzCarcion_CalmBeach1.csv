@@ -6,23 +6,23 @@
     DragonVeinEruption
 *, x=0.085, y=0.344, frequency=5, skip=False, adjust=False
     LarasConnection
-*, x=0.175, y=0.3, frequency=6, skip=False, adjust=False
+*, x=0.175, y=0.31, frequency=6, skip=False, adjust=False
     Adjust, x=0.175, y=0.265, max_steps=5
-*, x=0.328, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.328, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.513, y=0.3, frequency=2, skip=False, adjust=False
+*, x=0.513, y=0.31, frequency=2, skip=False, adjust=False
     Walk, direction=left, duration=0.4
     DragonVeinEruption
-*, x=0.513, y=0.3, frequency=4, skip=False, adjust=False
+*, x=0.513, y=0.31, frequency=4, skip=False, adjust=False
     BigStretch
-*, x=0.698, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.698, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.857, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.825, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.857, y=0.3, frequency=7, skip=False, adjust=False
+*, x=0.8, y=0.3, frequency=7, skip=False, adjust=False
     Fall, distance=0.01
     WindingMountainRidge
 >, label=emplace, frequency=7, skip=False
