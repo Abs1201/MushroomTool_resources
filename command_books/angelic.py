@@ -47,7 +47,7 @@ class Key:
 def step(direction, target):
     """
     Performs one movement step in the given DIRECTION towards TARGET.
-    Should not press any arrow keys, as those are handled by Auto Maple.
+    Should not press any arrow keys, as those are handled by MushroomTool.
     """
     num_presses = 2
     if direction == 'up' or direction == 'down':

@@ -19,10 +19,10 @@
 *, x=0.698, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.825, y=0.31, frequency=1, skip=False, adjust=False
+*, x=0.78, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
-*, x=0.8, y=0.3, frequency=7, skip=False, adjust=False
+*, x=0.78, y=0.3, frequency=7, skip=False, adjust=False
     Fall, distance=0.01
     WindingMountainRidge
 >, label=emplace, frequency=7, skip=False
