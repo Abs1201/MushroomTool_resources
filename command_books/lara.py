@@ -136,12 +136,12 @@ class Buff(Command):
         now = time.time()
         
         if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	        press(Key.ANIMA_WARRIOR, 2)
-	        self.cd900_buff_time = now
+            press(Key.ANIMA_WARRIOR, 2)
+            self.cd900_buff_time = now
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 3, up_time=0.3)
-	        self.decent_buff_time = now		
+            for key in buffs:
+                press(key, 3, up_time=0.3)
+            self.decent_buff_time = now		
 
 
 class DragonVeinEruption(Command):

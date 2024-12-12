@@ -34,6 +34,7 @@
 
 @, label=emplace
 *, x=0.762, y=0.25, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
     Adjust, x=0.762, y=0.19, max_steps=7
     Wait, duration=1
     Yanus
