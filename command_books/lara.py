@@ -18,13 +18,11 @@ class Key:
 
     # Buffs
     ANIMA_WARRIOR = 'd'
-    DECENT_SPEED_INFUSION = 'f'
     YAKISOBA = '-'
     PEERLESS_MOUNTAIN = '0'
     DRAGON_VEIN_READING = '9'
     MANA_OVERLOAD = '8'
-    DECENT_HYPER_BODY = ';'
-    DECENT_ADVANCED_BLESSING = 'g'
+    DECENT_HOLY_SYMBOL = 'f1'
 
     # Skills
     ESSENCE_SPRINKLE = 'ctrl'
@@ -33,6 +31,7 @@ class Key:
     ERDA_SHOWER = 't'
     BIG_STRETCH = '4'
     TRUE_ARACHNID_REFLECTION = 'q'
+    SOLAR_CRUST = 'f2'
     WAKEUP_CALL = 'w'
     UNCONSTRAINED_DRAGON_VEIN = 'insert'
     MENIFESTATION_WHERE_THE_RIVER_COURSES = 'delete'
@@ -111,9 +110,9 @@ class Adjust(Command):
                         press(Key.JUMP, 1, down_time=0.1)
                         key_up('down')
                         time.sleep(0.05)
-                    time.sleep(0.5)
+                    time.sleep(1.0)
                     if config.bot.rune_active:
-                        time.sleep(1.5)
+                        time.sleep(1.0)
                     counter -= 1
             error = utils.distance(config.player_pos, self.target)
             toggle = not toggle
@@ -127,12 +126,12 @@ class Buff(Command):
         self.cd120_buff_time = 0
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
-        self.cd240_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
 
     def main(self):
-        buffs = [Key.DECENT_SPEED_INFUSION, Key.DECENT_ADVANCED_BLESSING]
+        buffs = [Key.DECENT_HOLY_SYMBOL]
         now = time.time()
         
         if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
@@ -142,6 +141,9 @@ class Buff(Command):
             for key in buffs:
                 press(key, 3, up_time=0.3)
             self.decent_buff_time = now		
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250:
+            press(Key.SOLAR_CRUST,2)
+            self.cd250_buff_time = now
 
 
 class DragonVeinEruption(Command):
@@ -207,10 +209,14 @@ class BigStretch(Command):
         press(Key.BIG_STRETCH, 3)
         
 class TrueArachnidReflection(Command):
-    """uses will skill once"""
     def main(self):
         press(Key.TRUE_ARACHNID_REFLECTION, 1, down_time=0.05)
-        
+
+class SolarCrust(Command):
+    def main(self):
+        press(Key.SOLAR_CURST, 1, down_time=0.05)
+     
+    
 class WakeUpCall(Command):
     """uses wakeUpCall once"""
     def main(self):
