@@ -33,6 +33,7 @@ class Key:
     ERDA_SHOWER = 't'
     BIG_STRETCH = '4'
     TRUE_ARACHNID_REFLECTION = 'q'
+    SOLAR_CRUST = 'f4'
     WAKEUP_CALL = 'w'
     UNCONSTRAINED_DRAGON_VEIN = 'insert'
     MENIFESTATION_WHERE_THE_RIVER_COURSES = 'delete'
@@ -207,10 +208,14 @@ class BigStretch(Command):
         press(Key.BIG_STRETCH, 3)
         
 class TrueArachnidReflection(Command):
-    """uses will skill once"""
     def main(self):
         press(Key.TRUE_ARACHNID_REFLECTION, 1, down_time=0.05)
-        
+
+class SolarCrust(Command):
+    def main(self):
+        press(Key.SOLAR_CURST, 1, down_time=0.05)
+     
+    
 class WakeUpCall(Command):
     """uses wakeUpCall once"""
     def main(self):
