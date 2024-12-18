@@ -1,0 +1,18 @@
+*, x=0.197, y=0.225, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.404, y=0.208, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.584, y=0.197, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.758, y=0.197, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.584, y=0.197, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.365, y=0.197, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.427, y=0.140, frequency=7, skip=False, adjust=False
+    Adjust, x=0.427, y=0.14, max_steps=5
+    SpirityFrenzy
+*, x=0.787, y=0.146, frequency=7, skip=False, adjust=False
+    Adjust, x=0.787, y=0.146, max_steps=5
+    ErdaShower, jump=False
