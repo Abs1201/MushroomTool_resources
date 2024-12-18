@@ -1,0 +1,64 @@
+
+@, label=main
+*, x=0.1, y=0.33, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    Walk, direction=right, duration=0.25
+    DragonVeinEruption
+*, x=0.1, y=0.33, frequency=5, skip=False, adjust=False
+    LarasConnection
+*, x=0.175, y=0.33, frequency=6, skip=False, adjust=False
+    Adjust, x=0.152, y=0.303, max_steps=5
+*, x=0.328, y=0.33, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.328, y=0.33, frequency=3, skip=False, adjust=False
+    Wait, duration=0.25
+    ErdaShower, jump=False
+*, x=0.513, y=0.33, frequency=2, skip=False, adjust=False
+    Walk, direction=left, duration=0.4
+    DragonVeinEruption
+*, x=0.513, y=0.33, frequency=4, skip=False, adjust=False
+    BigStretch
+*, x=0.698, y=0.33, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.86, y=0.33, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.86, y=0.325, frequency=7, skip=False, adjust=False
+    WindingMountainRidge
+>, label=emplace, frequency=7, skip=False
+*, x=0.646, y=0.34, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.43, y=0.34, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+>, label=main, frequency=1, skip=False
+
+@, label=emplace
+*, x=0.77, y=0.33, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+    Adjust, x=0.788, y=0.261, max_steps=5
+    Wait, duration=1
+*, x=0.77, y=0.33, frequency=1, skip=False, adjust=False
+    Adjust, x=0.788, y=0.176, max_steps=3
+    Wait, duration=0.25
+*, x=0.77, y=0.261, frequency=1, skip=False, adjust=False
+    Adjust, x=0.788, y=0.176, max_steps=5
+    Wait, duration=0.5
+    Yanus
+*, x=0.46, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.491, y=0.115, max_steps=5
+    Wait, duration=0.8
+    Yanus
+*, x=0.19, y=0.15, frequency=1, skip=False, adjust=False
+    Adjust, x=0.188, y=0.097, max_steps=5
+    Wait, duration=1
+    Yanus
+
+@, label=meso
+*, x=0.17, y=0.15, frequency=1, skip=False, adjust=False
+    Walk, direction=left, duration=0.75
+    Fall, distance=0.05
+    Wait, duration=1.2
+*, x=0.424, y=0.188, frequency=1, skip=False, adjust=False
+    Wait, duration=1.25
