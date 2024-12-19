@@ -18,7 +18,6 @@ class Key:
 
     # Buffs
     ANIMA_WARRIOR = 'd'
-    YAKISOBA = '-'
     PEERLESS_MOUNTAIN = '0'
     DRAGON_VEIN_READING = '9'
     MANA_OVERLOAD = '8'
