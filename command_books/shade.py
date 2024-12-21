@@ -135,6 +135,7 @@ class Buff(Command):
         self.cd240_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
+        self.flag = True
 
     def main(self):
         buffs = [Key.HOLY_SYMBOL, Key.DICE]
@@ -145,9 +146,19 @@ class Buff(Command):
                 press(key, 2, up_time=0.3)
             self.decent_buff_time = now
 
-        if self.decent_buff_time == 0 or now - self.decent_buff_time > 120:
+        if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
             self.cd120_buff_time = now
             press(Key.HEROIC_MEMORIES, 2, up_time=0.3)
+            
+        if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
+            self.cd60_buff_time = now
+            if self.flag:
+                press(Key.FOX_GOD_FLASH, 3)
+                print("\ntest2")
+            else:
+                press(Key.FOX_MARBLE_FUSION, 3)
+                print("\ntest3")
+            self.flag = not self.flag
 
 class ErdaShower(Command):
     
