@@ -1,1 +1,18 @@
-*, x=0.448, y=0.290, frequency=1, skip=False, adjust=False
+*, x=0.527, y=0.234, frequency=6, skip=False, adjust=False
+    Adjust, x=0.527, y=0.234, max_steps=5
+    Wait, duration=0.2
+    ErdaShower, jump=False
+*, x=0.275, y=0.281, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.401, y=0.269, frequency=1, skip=False, adjust=False
+    Combo1WE, direction=right
+*, x=0.659, y=0.287, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.856, y=0.305, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.737, y=0.287, frequency=1, skip=False, adjust=False
+    Combo2RG, direction=left
+*, x=0.551, y=0.287, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.401, y=0.269, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir

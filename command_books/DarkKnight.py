@@ -12,6 +12,7 @@ class Key:
     # Movement
     JUMP = 'a' 
     ROPE_LIFT = 'shift' 
+    UPPER_CHARGE = 'd'
 
 
     # Buffs
@@ -205,8 +206,7 @@ class DarkImpale(Command):
   	   
 class DarkSpear(Command):
     def main(self):
-        press(Key.DARK_SPEAR, 2)
-           
+        press(Key.DARK_SPEAR, 2)    
 
 class BeholderImpact(Command):
     def main(self):
@@ -220,4 +220,37 @@ class DarkSin(Command):
     def main(self):
         press(Key.DARK_SIN, 2)  
 
-
+class UpperCharge(Command):
+    def main(self):
+        press(Key.UPPER_CHARGE, 2)
+        
+class Combo1WE(Command):
+    def __init__(self, direction):
+        super().__init__(locals())
+        self.direction = settings.validate_horizontal_arrows(direction)
+    
+    def main(self):
+        key_down(self.direction)
+        press(Key.DARK_SPEAR, 1)
+        press(Key.BEHOLDER_SHOCK, 1)
+        key_up(self.direction)
+        # key_down(Key.BEHOLDER_SHOCK)
+        # key_down(Key.DARK_SPEAR)
+        # key_up(Key.BEHOLDER_SHOCK)
+        # key_up(Key.DARK_SPEAR)
+        
+class Combo2RG(Command):
+    def __init__(self, direction):
+        super().__init__(locals())
+        self.direction = settings.validate_horizontal_arrows(direction)
+    
+    def main(self):
+        key_down(self.direction)
+        press(Key.DARK_SIN, 1)
+        press(Key.BEHOLDER_IMPACT, 1)
+        key_up(self.direction)
+        
+        # key_down(Key.DARK_SIN)
+        # key_down(Key.BEHOLDER_IMPACT)
+        # key_up(Key.DARK_SIN)
+        # key_up(Key.BEHOLDER_IMPACT)
