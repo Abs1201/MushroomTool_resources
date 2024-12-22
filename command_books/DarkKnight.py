@@ -149,15 +149,16 @@ class Buff(Command):
 
         if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
             self.cd120_buff_time = now
-            press(Key.EPIC_ADVENTURE, 2, up_time=0.3)
+            press(Key.EPIC_ADVENTURE, 3, up_time=0.3)
         
         if self.cd90_buff_time == 0 or now - self.cd90_buff_time > 90:
             self.cd90_buff_time = now
-            press(Key.DARK_THIRST, 2, up_time=0.3)
+            print('test1')
+            press(Key.DARK_THIRST, 3, up_time=0.3)
             
         if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
             self.cd90_buff_time = now
-            press(Key.DARKNESS_AURA, 2, up_time=0.3)
+            press(Key.DARKNESS_AURA, 3, up_time=0.3)
         
 
 class ErdaShower(Command):

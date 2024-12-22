@@ -1,0 +1,30 @@
+*, x=0.129, y=0.191, frequency=3, skip=False, adjust=False
+    Wait, duration=0.2
+    ErdaShower, jump=False
+*, x=0.129, y=0.191, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.267, y=0.173, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.413, y=0.182, frequency=1, skip=False, adjust=False
+    DarkSpear
+    DarkImpale_nodir
+*, x=0.551, y=0.178, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.676, y=0.182, frequency=1, skip=False, adjust=False
+    BeholderShock
+    DarkImpale_nodir
+*, x=0.809, y=0.173, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.933, y=0.191, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.840, y=0.173, frequency=1, skip=False, adjust=False
+    BeholderImpact
+    DarkImpale_nodir
+*, x=0.716, y=0.182, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.569, y=0.164, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.436, y=0.164, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.280, y=0.151, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
