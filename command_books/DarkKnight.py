@@ -246,6 +246,7 @@ class Combo2RG(Command):
 
 class Combo1WE_nodir_flag(Command):
     def __init__(self):
+        super().__init__(locals())
         self.flag = True
     
     def main(self):
@@ -257,6 +258,7 @@ class Combo1WE_nodir_flag(Command):
         
 class Combo2RG_nodir_flag(Command):
     def __init__(self):
+        super().__init__(locals())
         self.flag = True
     def main(self):
         if self.flag:
