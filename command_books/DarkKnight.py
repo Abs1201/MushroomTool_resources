@@ -231,10 +231,7 @@ class Combo1WE(Command):
         press(Key.DARK_SPEAR, 1, up_time=0.05)
         press(Key.BEHOLDER_SHOCK, 1, up_time=0.05)
         key_up(self.direction)
-        # key_down(Key.BEHOLDER_SHOCK)
-        # key_down(Key.DARK_SPEAR)
-        # key_up(Key.BEHOLDER_SHOCK)
-        # key_up(Key.DARK_SPEAR)
+
         
 class Combo2RG(Command):
     def __init__(self, direction):
@@ -246,8 +243,24 @@ class Combo2RG(Command):
         press(Key.DARK_SIN, 1, up_time=0.05)
         press(Key.BEHOLDER_IMPACT, 1, up_time=0.05)
         key_up(self.direction)
+
+class Combo1WE_nodir_flag(Command):
+    def __init__(self):
+        self.flag = True
+    
+    def main(self):
+        if self.flag:
+            press(Key.DARK_SPEAR, 1, up_time=0.05)
+        else:
+            press(Key.BEHOLDER_SHOCK, 1, up_time=0.05)
+
         
-        # key_down(Key.DARK_SIN)
-        # key_down(Key.BEHOLDER_IMPACT)
-        # key_up(Key.DARK_SIN)
-        # key_up(Key.BEHOLDER_IMPACT)
+class Combo2RG_nodir_flag(Command):
+    def __init__(self):
+        self.flag = True
+    def main(self):
+        if self.flag:
+            press(Key.DARK_SIN, 1, up_time=0.05)
+        else:
+            press(Key.BEHOLDER_IMPACT, 1, up_time=0.05)
+
