@@ -1,0 +1,32 @@
+
+@, label=root
+*, x=0.484, y=0.160, frequency=2, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.653, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.764, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.884, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.782, y=0.15, frequency=4, skip=False, adjust=False
+    Combo2RG, direction=left
+*, x=0.782, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.667, y=0.15, frequency=9, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.667, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.529, y=0.15, frequency=2, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.529, y=0.15, frequency=1, skip=False, adjust=False
+    DarkImpale_nodir
+*, x=0.375, y=0.15, frequency=1, skip=False, adjust=False
+    Combo1WE, direction=left
+>, label=install, frequency=7, skip=False
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.218, y=0.129, frequency=1, skip=False, adjust=False
+    Adjust, x=0.218, y=0.129, max_steps=5
+    Wait, duration=1
+    ErdaShower, jump=False
