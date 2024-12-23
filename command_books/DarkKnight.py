@@ -190,7 +190,7 @@ class ErdaShower(Command):
     
 class DarkImpale_nodir(Command):
     def main(self):
-        press(Key.DARK_IMPALE)
+        press(Key.DARK_IMPALE, up_time=0.05)
         
 class DarkImpale(Command):
     def __init__(self, direction, attacks=1):
@@ -206,19 +206,19 @@ class DarkImpale(Command):
   	   
 class DarkSpear(Command):
     def main(self):
-        press(Key.DARK_SPEAR, 2)    
+        press(Key.DARK_SPEAR, 1)    
 
 class BeholderImpact(Command):
     def main(self):
-        press(Key.BEHOLDER_IMPACT, 2) 
+        press(Key.BEHOLDER_IMPACT, 1) 
 
 class BeholderShock(Command):
     def main(self):
-        press(Key.BEHOLDER_SHOCK, 2)      
+        press(Key.BEHOLDER_SHOCK, 1)  
 
 class DarkSin(Command):
     def main(self):
-        press(Key.DARK_SIN, 2)  
+        press(Key.DARK_SIN, 1)  
 
 class UpperCharge(Command):
     def main(self):
@@ -231,8 +231,8 @@ class Combo1WE(Command):
     
     def main(self):
         key_down(self.direction)
-        press(Key.DARK_SPEAR, 1)
-        press(Key.BEHOLDER_SHOCK, 1)
+        press(Key.DARK_SPEAR, 1, up_time=0.05)
+        press(Key.BEHOLDER_SHOCK, 1, up_time=0.05)
         key_up(self.direction)
         # key_down(Key.BEHOLDER_SHOCK)
         # key_down(Key.DARK_SPEAR)
@@ -246,8 +246,8 @@ class Combo2RG(Command):
     
     def main(self):
         key_down(self.direction)
-        press(Key.DARK_SIN, 1)
-        press(Key.BEHOLDER_IMPACT, 1)
+        press(Key.DARK_SIN, 1, up_time=0.05)
+        press(Key.BEHOLDER_IMPACT, 1, up_time=0.05)
         key_up(self.direction)
         
         # key_down(Key.DARK_SIN)
