@@ -13,14 +13,11 @@ from random import randint
 class Key:
     # Movement
     JUMP = 'a'
-    LEAP_UP = 'shift'
-    ROPE_LIFT = '\''
+    ROPE_LIFT = 'shift'
 
     # Buffs
-    STAR_GAZER = 'f1'
-    NOVA_WARRIOR = 'f2'
-    ROLL_OF_THE_DICE = 'f3'
-    DECENT_COMBAT_ORDERS='f4'
+    SYMBOL = 'f2'
+    ROLL_OF_THE_DICE = 'f1'
     TERMS_CONDITIONS='1'
     MASCOT='5'
     EXALTATION='4'
@@ -131,20 +128,17 @@ class Buff(Command):
         self.decent_buff_time = 0
 
     def main(self):
-        buffs = [Key.ROLL_OF_THE_DICE, Key.DECENT_COMBAT_ORDERS]
+        buffs = [Key.ROLL_OF_THE_DICE, Key.SYMBOL]
         now = time.time()
         if self.cd60_buff_time==0 or now-self.cd60_buff_time>60:
             press(Key.TERMS_CONDITIONS, 2)
             press(Key.EXALTATION, 2)
             press(Key.MASCOT,2)
             self.cd60_buff_time=now
-        if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	        press(Key.NOVA_WARRIOR, 2)
-	        self.cd900_buff_time = now
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 3, up_time=0.3)
-	        self.decent_buff_time = now		
+            for key in buffs:
+                press(key, 3, up_time=0.3)
+            self.decent_buff_time = now
 
 
 class CelestialRoar(Command):

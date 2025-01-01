@@ -148,9 +148,9 @@ class Buff(Command):
 	    #     press(Key.ANIMA_WARRIORS, 2)
 	    #     self.cd900_buff_time = now
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 2, up_time=0.3)
-	        self.decent_buff_time = now		
+            for key in buffs:
+                press(key, 3, up_time=0.3)
+            self.decent_buff_time = now	
 
 class ErdaShower(Command):
     
