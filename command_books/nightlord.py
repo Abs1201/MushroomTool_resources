@@ -141,9 +141,9 @@ class Buff(Command):
         
         if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
             if self.flag250:
-                press(Key.SOLAR_CRUST,2)
+                press(Key.SOLAR_CRUST,2, down_time=0.1, up_time=0.05)
             else:
-                press(Key.REFLECTION,2)
+                press(Key.REFLECTION,2, down_time=0.1, up_time=0.05)
             self.cd250_buff_time = now
             self.flag250 = not self.flag250
         
@@ -153,14 +153,14 @@ class Buff(Command):
             
         if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180/2+4:
             if self.flag180:
-                press(Key.THROW_BLASTING, 2)
+                press(Key.THROW_BLASTING, 2, down_time=0.1, up_time=0.05)
             else:
                 press(Key.SHADOW_WALK, 2)
             self.cd180_buff_time = now
             self.flag180 = not self.flag180
             
         if self.cd360_buff_time == 0 or now - self.cd360_buff_time > 360:
-            press(Key.ORIGIN, 3)
+            press(Key.ORIGIN, 3, down_time=0.1, up_time=0.05)
             print("卍解!")
             self.cd360_buff_time = now
 
