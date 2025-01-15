@@ -15,15 +15,11 @@ class Key:
     ROPE_LIFT = 'shift' 
 
     # Buffs
-    MAPLE_WARRIOR = 'f1' 
-    DECENT_HOLY_SYMBOL = 'f2'
-    DECENT_SHARP_EYE = '.'
-    SHADOW_PARTNER = 'f6' 
-    # SPEED_INFUSION = '8'
-    DECENT_COMBAT_ORDERS = 'f3'
-    DECENT_ADVANCED_BLESSING = 'f4'
+    DECENT_HOLY_SYMBOL = 'f3'
 
     EPIC_ADVENTURE = '1'
+    THROW_BLASTING = '2'
+    SHADOW_WALK = 'insert'
 
     # Skills
     SHOWDOWN = 'f' 
@@ -34,6 +30,12 @@ class Key:
     DARK_FLARE = 'v' 
    
     ERDA_SHOWER = 't'
+    
+    SOLAR_CRUST = 'f2'
+    REFLECTION = 'f1'
+    
+    ORIGIN = 'page down'
+    
 
 
 #########################
@@ -121,24 +123,47 @@ class Buff(Command):
         self.cd120_buff_time = 0
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
-        self.cd240_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd900_buff_time = 0
+        self.cd360_buff_time = 0
         self.decent_buff_time = 0
+        self.flag250=True
+        self.flag180=True
+        
 
     def main(self):
-        buffs = [Key.DECENT_ADVANCED_BLESSING, Key.DECENT_HOLY_SYMBOL, Key.DECENT_COMBAT_ORDERS]
+        buffs = [Key.DECENT_HOLY_SYMBOL]
         now = time.time()
-
-        if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
-	        press(Key.EPIC_ADVENTURE, 3)
-	        self.cd120_buff_time = now
-        if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	        press(Key.MAPLE_WARRIOR, 3)
-	        self.cd900_buff_time = now
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 3, up_time=0.3)
-	        self.decent_buff_time = now		
+            for key in buffs:
+                press(key, 3, up_time=0.3)
+            self.decent_buff_time = now
+        
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
+            if self.flag250:
+                press(Key.SOLAR_CRUST,2)
+            else:
+                press(Key.REFLECTION,2)
+            self.cd250_buff_time = now
+            self.flag250 = not self.flag250
+        
+        if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
+            press(Key.EPIC_ADVENTURE, 2)
+            self.cd120_buff_time = now
+            
+        if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180/2+4:
+            if self.flag180:
+                press(Key.THROW_BLASTING, 2)
+            else:
+                press(Key.SHADOW_WALK, 2)
+            self.cd180_buff_time = now
+            self.flag180 = not self.flag180
+            
+        if self.cd360_buff_time == 0 or now - self.cd360_buff_time > 360:
+            press(Key.ORIGIN, 3)
+            print("卍解!")
+            self.cd360_buff_time = now
+
 
 			   
 class Showdown(Command):
@@ -163,7 +188,11 @@ class Showdown(Command):
             time.sleep(0.3)
         else:
             time.sleep(0.2)
-			
+	
+class ShowDown_nodir(Command):
+    def main(self):
+        press(Key.SHOWDOWN, 2, up_time=0.05)
+ 		
 class DarkFlare(Command):
     """
     Uses 'DarkFlare' in a given direction, or towards the center of the map if
