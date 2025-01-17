@@ -160,7 +160,7 @@ class Buff(Command):
             self.flag180 = not self.flag180
             
         if self.cd360_buff_time == 0 or now - self.cd360_buff_time > 360:
-            press(Key.ORIGIN, 3)
+            press(Key.ORIGIN, 3, down_time=0.1, up_time=0.1)
             print("卍解!")
             self.cd360_buff_time = now
 
