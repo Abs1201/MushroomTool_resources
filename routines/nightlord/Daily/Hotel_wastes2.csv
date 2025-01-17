@@ -7,8 +7,8 @@
 *, x=0.344, y=0.292, frequency=1, skip=False, adjust=False
     ShowDown_nodir
 >, label=install, frequency=6, skip=False
-*, x=0.156, y=0.302, frequency=5, skip=False, adjust=False
-    SuddenRaid
+*, x=0.156, y=0.302, frequency=3, skip=False, adjust=False
+    DeathStar
 *, x=0.312, y=0.302, frequency=1, skip=False, adjust=False
     ShowDown_nodir
 *, x=0.32, y=0.302, frequency=11, skip=False, adjust=False
@@ -33,17 +33,16 @@
 *, x=0.552, y=0.141, frequency=1, skip=False, adjust=False
     ShowDown_nodir
     Wait, duration=1
-    Adjust, x=0.525, y=0.104, max_steps=5
-    Fall, distance=0.01
+    Walk, direction=left, duration=0.33
+    Fall, distance=0.05
     Wait, duration=1.5
 *, x=0.729, y=0.161, frequency=1, skip=False, adjust=False
     ShowDown_nodir
+    Adjust, x=0.761, y=0.161, max_steps=5
+    Walk, direction=right, duration=0.2
     Wait, duration=1
-    Adjust, x=0.792, y=0.161, max_steps=5
-*, x=0.75, y=0.224, frequency=1, skip=False, adjust=False
-    Wait, duration=0.4
     Fall, distance=0.01
-    Wait, duration=0.2
+    Wait, duration=0.5
     ErdaShower, jump=False
 *, x=0.740, y=0.234, frequency=1, skip=False, adjust=False
     ShowDown_nodir

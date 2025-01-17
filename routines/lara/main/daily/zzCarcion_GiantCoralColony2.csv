@@ -17,7 +17,7 @@
 *, x=0.513, y=0.33, frequency=2, skip=False, adjust=False
     Walk, direction=left, duration=0.4
     DragonVeinEruption
-*, x=0.513, y=0.33, frequency=4, skip=False, adjust=False
+*, x=0.698, y=0.33, frequency=5, skip=False, adjust=False
     BigStretch
 *, x=0.698, y=0.33, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
@@ -47,10 +47,12 @@
     Wait, duration=0.5
     Yanus
 *, x=0.46, y=0.15, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
     Adjust, x=0.491, y=0.115, max_steps=5
     Wait, duration=0.8
     Yanus
 *, x=0.19, y=0.15, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
     Adjust, x=0.188, y=0.097, max_steps=5
     Wait, duration=1
     Yanus
