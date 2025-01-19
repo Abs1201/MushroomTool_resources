@@ -1,6 +1,6 @@
 
 @, label=Bot
->, label=2ndmeso, frequency=8, skip=False
+>, label=2ndmeso, frequency=5, skip=False
 *, x=0.752, y=0.143, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
