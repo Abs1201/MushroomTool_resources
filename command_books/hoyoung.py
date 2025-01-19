@@ -14,12 +14,9 @@ class Key:
     ROPE_LIFT = 'shift' 
 
     # Buffs
-    RITUAL_FAN_ACCELERATION = 'f1'
-    ANIMA_WARRIORS = 'f2' 
-    
     DECENT_HOLY_SYMBOL = 'f3'
-    DECENT_SHARP_EYE = 'f4'
-    DECENT_COMBAT_ORDERS = 'f5'
+    RITUAL_FAN_ACCELERATION = 'f4'
+    DECENT_SHARP_EYE = 'f5'
     DECENT_SPEED_INFUSION = 'f6'
 
     
@@ -43,6 +40,9 @@ class Key:
     WRATH_OF_GODS = 'page down'
     SAGE_TAIYU_MIRACLE_TONIC = 'h'
     TIGER = '2'
+    
+    REFLECTION = 'f1'
+    SOLAR_CREST = 'f2'
 
 
 #########################
@@ -146,6 +146,7 @@ class Buff(Command):
         self.cd240_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
+        self.flag250 = True
 
     def main(self):
         buffs = [Key.DECENT_HOLY_SYMBOL]
@@ -154,6 +155,14 @@ class Buff(Command):
             for key in buffs:
                 press(key, 3, up_time=0.3)
             self.decent_buff_time = now
+            
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
+            if self.flag250:
+                press(Key.SOLAR_CREST,2)
+            else:
+                press(Key.REFLECTION,2)
+            self.cd250_buff_time = now
+            self.flag250 = not self.flag250
         # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
 	    #     press(Key.GHOST_FLAME, 2)
 	    #     self.cd60_buff_time = now
