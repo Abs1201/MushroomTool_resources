@@ -142,7 +142,7 @@ class Buff(Command):
         self.cd100_buff_time = 0
         self.cd120_buff_time = 0
         self.cd180_buff_time = 0
-        self.cd200_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd240_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
