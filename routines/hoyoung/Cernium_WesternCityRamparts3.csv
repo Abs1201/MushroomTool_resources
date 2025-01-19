@@ -1,10 +1,20 @@
 
 @, label=Bot
+>, label=2ndmeso, frequency=8, skip=False
 *, x=0.752, y=0.143, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
     Fall, distance=0.01
     ThousandTonStone
+>, label=root, frequency=1, skip=False
+
+@, label=2ndmeso
+*, x=0.752, y=0.143, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StoneTremor, direction=up
+    Walk, direction=right, duration=1.4
+
+@, label=root
 >, label=erda, frequency=7, skip=False
 
 @, label=Bot2
@@ -23,6 +33,8 @@
     ConsumingFlames
 *, x=0.235, y=0.235, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
+*, x=0.235, y=0.218, frequency=4, skip=False, adjust=False
+    Wait, duration=0.8
 >, label=vortex, frequency=6, skip=False
 *, x=0.223, y=0.235, frequency=6, skip=False, adjust=False
     GhostFlame
@@ -35,10 +47,12 @@
 @, label=vortex
 *, x=0.269, y=0.17, frequency=1, skip=False, adjust=False
     Adjust, x=0.271, y=0.118, max_steps=2
+    Wait, duration=1.5
+*, x=0.269, y=0.08, frequency=2, skip=False, adjust=False
     Wait, duration=1
-*, x=0.277, y=0.046, frequency=2, skip=False, adjust=False
     Adjust, x=0.277, y=0.046, max_steps=1
     Wait, duration=0.5
+    Walk, direction=right, duration=0.8
 *, x=0.375, y=0.12, frequency=1, skip=False, adjust=False
     Adjust, x=0.379, y=0.084, max_steps=5
 *, x=0.374, y=0.12, frequency=2, skip=False, adjust=False
@@ -54,7 +68,7 @@
 >, label=Bot, frequency=1, skip=False
 
 @, label=erda
-*, x=0.765, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.765, y=0.25, frequency=1, skip=False, adjust=False
     Walk, direction=right, duration=0.8
     ErdaShower, jump=False
 >, label=Bot2, frequency=1, skip=False
@@ -69,4 +83,5 @@
     Walk, direction=left, duration=0.01
 *, x=0.815, y=0.076, frequency=1, skip=False, adjust=False
     Adjust, x=0.815, y=0.076, max_steps=3
-    Wait, duration=2
+    Wait, duration=1.5
+    Walk, direction=left, duration=0.5

@@ -148,8 +148,12 @@ class Buff(Command):
         self.decent_buff_time = 0
 
     def main(self):
-        buffs = [Key.DECENT_SHARP_EYE, Key.DECENT_HOLY_SYMBOL, Key.DECENT_COMBAT_ORDERS]
+        buffs = [Key.DECENT_HOLY_SYMBOL]
         now = time.time()
+        if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
+            for key in buffs:
+                press(key, 3, up_time=0.3)
+            self.decent_buff_time = now
         # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
 	    #     press(Key.GHOST_FLAME, 2)
 	    #     self.cd60_buff_time = now
