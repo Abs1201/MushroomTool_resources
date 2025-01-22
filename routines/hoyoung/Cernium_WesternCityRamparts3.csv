@@ -46,17 +46,19 @@
 
 @, label=vortex
 *, x=0.269, y=0.17, frequency=1, skip=False, adjust=False
-    Adjust, x=0.271, y=0.118, max_steps=2
-    Wait, duration=1.5
+    Adjust, x=0.271, y=0.118, max_steps=4
+    Walk, direction=left, duration=0.2
+    Wait, duration=2
 *, x=0.269, y=0.08, frequency=2, skip=False, adjust=False
     Wait, duration=1
-    Adjust, x=0.277, y=0.046, max_steps=1
-    Wait, duration=0.5
-    Walk, direction=right, duration=0.8
-*, x=0.375, y=0.12, frequency=1, skip=False, adjust=False
+    Adjust, x=0.277, y=0.046, max_steps=5
+*, x=0.269, y=0.08, frequency=2, skip=False, adjust=False
+    Wait, duration=1
+    Walk, direction=right, duration=1
+*, x=0.36, y=0.12, frequency=1, skip=False, adjust=False
     Adjust, x=0.379, y=0.084, max_steps=5
 *, x=0.374, y=0.12, frequency=2, skip=False, adjust=False
-    Wait, duration=0.1
+    Wait, duration=0.8
     MiracleTonic
 *, x=0.374, y=0.12, frequency=1, skip=False, adjust=False
     Adjust, x=0.379, y=0.084, max_steps=5

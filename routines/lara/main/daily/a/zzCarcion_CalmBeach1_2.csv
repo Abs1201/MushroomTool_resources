@@ -18,7 +18,6 @@
     Walk, direction=left, duration=0.4
     DragonVeinEruption
 *, x=0.513, y=0.31, frequency=4, skip=False, adjust=False
-    Fall, distance=0.05
     BigStretch
 *, x=0.698, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
@@ -26,6 +25,9 @@
 *, x=0.86, y=0.31, frequency=1, skip=False, adjust=False
     Wait, duration=0.34
     DragonVeinEruption
+*, x=0.86, y=0.3, frequency=4, skip=False, adjust=False
+    Wait, duration=0.8
+    Fall, distance=0.01
 *, x=0.86, y=0.3, frequency=7, skip=False, adjust=False
     Fall, distance=0.01
     WindingMountainRidge
@@ -42,8 +44,14 @@
     Adjust, x=0.73, y=0.344, max_steps=5
 *, x=0.73, y=0.25, frequency=1, skip=False, adjust=False
     Adjust, x=0.73, y=0.122, max_steps=5
+    EssenceSprinkle
     Wait, duration=0.8
+*, x=0.730, y=0.2, frequency=1, skip=False, adjust=False
+    Adjust, x=0.73, y=0.122, max_steps=5
+    Walk, direction=right, duration=0.5
+    Wait, duration=0.5
 *, x=0.73, y=0.25, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
     Adjust, x=0.73, y=0.19, max_steps=5
     Wait, duration=1
     Yanus
@@ -51,6 +59,7 @@
     Walk, direction=left, duration=0.5
     TrueArachnidReflection
 *, x=0.492, y=0.201, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
     Wait, duration=0.5
     Yanus
 
@@ -60,8 +69,11 @@
     Wait, duration=1.2
 *, x=0.333, y=0.16, frequency=1, skip=False, adjust=False
     Wait, duration=1.3
-    Fall, distance=0.05
+    Fall, distance=0.01
+    EssenceSprinkle
 *, x=0.3, y=0.19, frequency=1, skip=False, adjust=False
     Adjust, x=0.243, y=0.19, max_steps=5
     Wait, duration=0.5
     Yanus
+    Walk, direction=left, duration=1
+    Fall, distance=0.05
