@@ -15,9 +15,9 @@ class Key:
 
     # Buffs
     DECENT_HOLY_SYMBOL = 'f3'
-    RITUAL_FAN_ACCELERATION = 'f4'
-    DECENT_SHARP_EYE = 'f5'
-    DECENT_SPEED_INFUSION = 'f6'
+    # RITUAL_FAN_ACCELERATION = 'f4'
+    # DECENT_SHARP_EYE = 'f5'
+    # DECENT_SPEED_INFUSION = 'f6'
 
     
 
