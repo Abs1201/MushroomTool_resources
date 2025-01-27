@@ -1,18 +1,22 @@
 
 @, label=Bot
+>, label=meso, frequency=8, skip=False
 *, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
     Fall, distance=0.01
     ThousandTonStone
->, label=root, frequency=1, skip=False
-
-@, label=root
->, label=erda, frequency=7, skip=False
 
 @, label=Bot2
 *, x=0.718, y=0.3, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
+*, x=0.866, y=0.3, frequency=5, skip=False, adjust=False
+    Wait, duration=1.5
+    Fall, distance=0.05
+    Wait, duration=0.2
+    ErdaShower, jump=False
+*, x=0.64, y=0.3, frequency=5, skip=False, adjust=False
+    GoldBandedCudgel, direction=left, attacks=2, repetitions=1
 *, x=0.580, y=0.3, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
 *, x=0.433, y=0.3, frequency=1, skip=False, adjust=False
@@ -27,12 +31,12 @@
 *, x=0.235, y=0.3, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
 *, x=0.235, y=0.3, frequency=6, skip=False, adjust=False
-    GhostFlame
+    GoldBandedCudgel, direction=left, attacks=2, repetitions=1
 *, x=0.134, y=0.3, frequency=2, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
 *, x=0.134, y=0.3, frequency=4, skip=False, adjust=False
     Wait, duration=0.8
->, label=vortex, frequency=6, skip=False
+>, label=vortex, frequency=5, skip=False
 *, x=0.15, y=0.3, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
     Wait, duration=0.4
@@ -42,11 +46,11 @@
 @, label=vortex
 *, x=0.1, y=0.24, frequency=1, skip=False, adjust=False
     Adjust, x=0.1, y=0.154, max_steps=5
-    Wait, duration=2
+    Wait, duration=1
 *, x=0.124, y=0.14, frequency=2, skip=False, adjust=False
     Wait, duration=1
-    Adjust, x=0.124, y=0.085, max_steps=5
-*, x=0.124, y=0.14, frequency=2, skip=False, adjust=False
+    Adjust, x=0.124, y=0.085, max_steps=2
+*, x=0.124, y=0.14, frequency=1, skip=False, adjust=False
     Wait, duration=1
     Walk, direction=right, duration=1
 *, x=0.22, y=0.12, frequency=1, skip=False, adjust=False
@@ -58,19 +62,13 @@
     Adjust, x=0.244, y=0.119, max_steps=5
     Wait, duration=0.1
     StarVortex, direction=left
+    Wait, duration=1
+    GhostFlame
 >, label=gate, frequency=2, skip=False
 *, x=0.22, y=0.12, frequency=1, skip=False, adjust=False
     Wait, duration=1
     useWarpGate
 >, label=Bot, frequency=1, skip=False
-
-@, label=erda
-*, x=0.706, y=0.3, frequency=1, skip=False, adjust=False
-    Fall, distance=0.01
-    Walk, direction=right, duration=0.8
-    Wait, duration=0.3
-    ErdaShower, jump=False
->, label=Bot2, frequency=1, skip=False
 
 @, label=gate
 *, x=0.468, y=0.119, frequency=1, skip=False, adjust=False
@@ -79,7 +77,7 @@
     Fan, direction=right, attacks=2, repetitions=1
     Adjust, x=0.572, y=0.08, max_steps=5
     Wait, duration=1
-    Walk, direction=right, duration=1
+    Walk, direction=right, duration=1.4
 *, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
     Adjust, x=0.706, y=0.119, max_steps=9
     Wait, duration=0.1
@@ -88,3 +86,20 @@
     newWarpGate
     Walk, direction=right, duration=0.2
     Wait, duration=1
+>, label=Bot, frequency=1, skip=False
+
+@, label=meso
+*, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
+    Walk, direction=left, duration=1.5
+*, x=0.592, y=0.189, frequency=1, skip=False, adjust=False
+    GoldBandedCudgel, direction=left, attacks=2, repetitions=1
+*, x=0.403, y=0.204, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+    Wait, duration=0.8
+*, x=0.234, y=0.214, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+    Wait, duration=1
+*, x=0.234, y=0.214, frequency=1, skip=False, adjust=False
+    Wait, duration=0.5
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
