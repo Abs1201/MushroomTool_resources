@@ -1,0 +1,61 @@
+
+@, label=root
+
+@, label=erda
+*, x=0.214, y=0.343, frequency=6, skip=False, adjust=False
+    Walk, direction=left, duration=0.8
+    Wait, duration=0.2
+    ErdaShower, jump=False
+*, x=0.303, y=0.333, frequency=7, skip=False, adjust=False
+    Wait, duration=0.5
+    DarklordsOmen, direction=right
+*, x=0.323, y=0.343, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.473, y=0.343, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.68, y=0.31, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.811, y=0.303, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.9, y=0.24, frequency=1, skip=False, adjust=False
+    Adjust, x=0.871, y=0.189, max_steps=5
+    Walk, direction=left, duration=0.3
+    Shurikkane
+>, label=meso, frequency=7, skip=False
+*, x=0.632, y=0.189, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+
+@, label=end_meso
+*, x=0.428, y=0.194, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+>, label=install, frequency=6, skip=False
+*, x=0.254, y=0.214, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+    Adjust, x=0.214, y=0.214, max_steps=5
+    Fall, distance=0.05
+    ShowDown_nodir
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.254, y=0.154, frequency=1, skip=False, adjust=False
+    Adjust, x=0.254, y=0.119, max_steps=5
+    DarkFlare, direction=left
+*, x=0.22, y=0.154, frequency=1, skip=False, adjust=False
+    Adjust, x=0.159, y=0.154, max_steps=5
+    Wait, duration=1
+    Fall, distance=0.05
+>, label=root, frequency=1, skip=False
+
+@, label=meso
+*, x=0.736, y=0.119, frequency=1, skip=False, adjust=False
+    Adjust, x=0.736, y=0.119, max_steps=5
+    ShowDown_nodir
+*, x=0.587, y=0.080, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+    Wait, duration=1
+    Walk, direction=left, duration=1.5
+*, x=0.428, y=0.119, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+    Wait, duration=1.5
+    Fall, distance=0.01
+>, label=end_meso, frequency=1, skip=False
