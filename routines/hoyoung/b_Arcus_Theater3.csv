@@ -1,6 +1,6 @@
 
 @, label=Bot
->, label=meso, frequency=8, skip=False
+>, label=meso, frequency=7, skip=False
 *, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
@@ -10,9 +10,11 @@
 @, label=Bot2
 *, x=0.718, y=0.3, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
-*, x=0.866, y=0.3, frequency=5, skip=False, adjust=False
-    Wait, duration=1.5
-    Fall, distance=0.05
+*, x=0.718, y=0.3, frequency=8, skip=False, adjust=False
+    Fall_ignoreRope, distance=0.01
+*, x=0.718, y=0.3, frequency=5, skip=False, adjust=False
+    Walk, direction=right, duration=1.5
+    Fall, distance=0.01
     Wait, duration=0.2
     ErdaShower, jump=False
 *, x=0.64, y=0.3, frequency=5, skip=False, adjust=False
@@ -44,14 +46,17 @@
 >, label=Bot, frequency=1, skip=False
 
 @, label=vortex
+*, x=0.134, y=0.3, frequency=5, skip=False, adjust=False
+    Adjust, x=0.1, y=0.343, max_steps=5
 *, x=0.1, y=0.24, frequency=1, skip=False, adjust=False
     Adjust, x=0.1, y=0.154, max_steps=5
+    Fan, direction=right, attacks=2, repetitions=1
     Wait, duration=1
 *, x=0.124, y=0.14, frequency=2, skip=False, adjust=False
     Wait, duration=1
     Adjust, x=0.124, y=0.085, max_steps=2
+    Fan, direction=left, attacks=2, repetitions=1
 *, x=0.124, y=0.14, frequency=1, skip=False, adjust=False
-    Wait, duration=1
     Walk, direction=right, duration=1
 *, x=0.22, y=0.12, frequency=1, skip=False, adjust=False
     Adjust, x=0.244, y=0.119, max_steps=5
@@ -64,7 +69,7 @@
     StarVortex, direction=left
     Wait, duration=1
     GhostFlame
->, label=gate, frequency=2, skip=False
+>, label=gate, frequency=1, skip=False
 *, x=0.22, y=0.12, frequency=1, skip=False, adjust=False
     Wait, duration=1
     useWarpGate
@@ -78,7 +83,7 @@
     Adjust, x=0.572, y=0.08, max_steps=5
     Wait, duration=1
     Walk, direction=right, duration=1.4
-*, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
+*, x=0.706, y=0.119, frequency=2, skip=False, adjust=False
     Adjust, x=0.706, y=0.119, max_steps=9
     Wait, duration=0.1
     ButterflyDream
