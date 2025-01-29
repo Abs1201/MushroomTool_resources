@@ -1,10 +1,10 @@
 
 @, label=Bot
->, label=2ndmeso, frequency=5, skip=False
+>, label=2ndmeso, frequency=3, skip=False
 *, x=0.752, y=0.143, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
-    Fall, distance=0.01
+    Fall_ignoreRope, distance=0.01
     ThousandTonStone
 >, label=root, frequency=1, skip=False
 
@@ -77,7 +77,7 @@
 
 @, label=gate
 *, x=0.752, y=0.143, frequency=1, skip=False, adjust=False
-    Adjust, x=0.741, y=0.143, max_steps=9
+    Adjust, x=0.735, y=0.143, max_steps=9
     Wait, duration=0.1
     ButterflyDream
     Wait, duration=0.03
