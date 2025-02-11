@@ -1,6 +1,6 @@
 
 @, label=Bot
->, label=meso, frequency=7, skip=False
+>, label=meso, frequency=6, skip=False
 *, x=0.706, y=0.119, frequency=1, skip=False, adjust=False
     Wait, duration=0.1
     StoneTremor, direction=up
@@ -13,9 +13,10 @@
 *, x=0.718, y=0.3, frequency=8, skip=False, adjust=False
     Fall_ignoreRope, distance=0.01
 *, x=0.718, y=0.3, frequency=5, skip=False, adjust=False
-    Walk, direction=right, duration=1.5
+    Walk, direction=right, duration=1.8
+    Wait, duration=0.5
     Fall, distance=0.01
-    Wait, duration=0.2
+    Walk, direction=left, duration=0.3
     ErdaShower, jump=False
 *, x=0.64, y=0.3, frequency=5, skip=False, adjust=False
     GoldBandedCudgel, direction=left, attacks=2, repetitions=1
@@ -69,6 +70,8 @@
     Wait, duration=0.1
     StarVortex, direction=left
     Wait, duration=1
+    ButterflyDream
+    Wait, duration=0.2
     GhostFlame
 >, label=gate, frequency=1, skip=False
 *, x=0.22, y=0.12, frequency=1, skip=False, adjust=False
@@ -87,8 +90,6 @@
 *, x=0.706, y=0.119, frequency=2, skip=False, adjust=False
     Adjust, x=0.706, y=0.119, max_steps=9
     Wait, duration=0.1
-    ButterflyDream
-    Wait, duration=0.03
     newWarpGate
     Walk, direction=right, duration=0.2
     Wait, duration=1

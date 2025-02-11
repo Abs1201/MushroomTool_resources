@@ -4,6 +4,7 @@
     Adjust, x=0.2, y=0.314, max_steps=5
     Wait, duration=0.5
     GigaCrash2, direction=right, attacks=3, downTime=0.5
+>, label=meso, frequency=6, skip=False
 *, x=0.200, y=0.27, frequency=1, skip=False, adjust=False
     BurstStep, direction=up, attacks=1, repetitions=1
 *, x=0.200, y=0.19, frequency=1, skip=False, adjust=False
@@ -12,15 +13,30 @@
     Wait, duration=1
     WindCutter2, direction=right, attacks=3, downTime=0.5
     Fall_ignoreRope, distance=0.01
->, label=install, frequency=10, skip=False
+>, label=install, frequency=7, skip=False
 >, label=root, frequency=1, skip=False
 
 @, label=install
 *, x=0.2, y=0.27, frequency=1, skip=False, adjust=False
     ShodowFlash
 *, x=0.456, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.72, y=0.3, frequency=1, skip=False, adjust=False
+    ShodowRain
+    BurstStep, direction=up, attacks=1, repetitions=1
+    Wait, duration=1
 *, x=0.720, y=0.240, frequency=1, skip=False, adjust=False
     Adjust, x=0.72, y=0.24, max_steps=5
     ErdaShower, jump=False
     Wait, duration=0.5
+    ShodowFlash
+>, label=root, frequency=1, skip=False
+
+@, label=meso
+*, x=0.2, y=0.25, frequency=1, skip=False, adjust=False
+    ShodowFlash
+    Wait, duration=0.5
+*, x=0.503, y=0.314, frequency=1, skip=False, adjust=False
+    FlashCut, direction=right, attacks=3, repetitions=1
+*, x=0.766, y=0.314, frequency=1, skip=False, adjust=False
+    Wait, duration=1.5
     ShodowFlash

@@ -47,11 +47,13 @@
 @, label=vortex
 *, x=0.269, y=0.17, frequency=1, skip=False, adjust=False
     Adjust, x=0.271, y=0.118, max_steps=4
+    Fan, direction=left, attacks=2, repetitions=1
     Walk, direction=left, duration=0.2
     Wait, duration=2
 *, x=0.269, y=0.08, frequency=2, skip=False, adjust=False
     Wait, duration=1
     Adjust, x=0.277, y=0.046, max_steps=5
+    Fan, direction=left, attacks=2, repetitions=1
 *, x=0.269, y=0.08, frequency=2, skip=False, adjust=False
     Wait, duration=1
     Walk, direction=right, duration=1
@@ -85,5 +87,6 @@
     Walk, direction=left, duration=0.01
 *, x=0.815, y=0.076, frequency=1, skip=False, adjust=False
     Adjust, x=0.815, y=0.076, max_steps=3
+    Fan, direction=right, attacks=2, repetitions=1
     Wait, duration=1.5
     Walk, direction=left, duration=0.5

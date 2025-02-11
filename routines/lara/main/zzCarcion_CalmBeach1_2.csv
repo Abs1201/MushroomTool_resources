@@ -28,10 +28,10 @@
 *, x=0.86, y=0.3, frequency=4, skip=False, adjust=False
     Wait, duration=0.8
     Fall, distance=0.01
-*, x=0.86, y=0.3, frequency=7, skip=False, adjust=False
+*, x=0.86, y=0.3, frequency=6, skip=False, adjust=False
     Fall, distance=0.01
     WindingMountainRidge
->, label=emplace, frequency=7, skip=False
+>, label=emplace, frequency=6, skip=False
 *, x=0.646, y=0.3, frequency=1, skip=False, adjust=False
     EssenceSprinkle
 *, x=0.43, y=0.3, frequency=1, skip=False, adjust=False
