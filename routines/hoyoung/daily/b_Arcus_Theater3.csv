@@ -8,7 +8,7 @@
     ThousandTonStone
 
 @, label=Bot2
-*, x=0.718, y=0.3, frequency=1, skip=False, adjust=False
+*, x=0.718, y=0.25, frequency=1, skip=False, adjust=False
     Fan, direction=left, attacks=2, repetitions=1
 *, x=0.718, y=0.3, frequency=8, skip=False, adjust=False
     Fall_ignoreRope, distance=0.01
