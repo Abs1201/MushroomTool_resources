@@ -167,7 +167,9 @@ class Buff(Command):
             
 
 
-
+class ShadowLeap(Command):
+    def main(self):
+        press(Key.SHADOW_LEAP, 1, down_time=0.1, up_time=0.05)
 			   
 class Showdown(Command):
     """Attacks using 'Showdown' in a given direction."""

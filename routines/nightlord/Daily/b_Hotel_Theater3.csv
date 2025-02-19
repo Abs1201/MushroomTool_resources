@@ -9,7 +9,7 @@
 *, x=0.303, y=0.333, frequency=7, skip=False, adjust=False
     Wait, duration=0.5
     DarklordsOmen, direction=right
-*, x=0.323, y=0.343, frequency=1, skip=False, adjust=False
+*, x=0.25, y=0.343, frequency=1, skip=False, adjust=False
     ShowDown_nodir
 *, x=0.473, y=0.343, frequency=1, skip=False, adjust=False
     ShowDown_nodir
@@ -17,9 +17,10 @@
     ShowDown_nodir
 *, x=0.811, y=0.303, frequency=1, skip=False, adjust=False
     ShowDown_nodir
-*, x=0.94, y=0.26, frequency=1, skip=False, adjust=False
-    Adjust, x=0.871, y=0.189, max_steps=5
-    Walk, direction=left, duration=0.3
+*, x=0.85, y=0.26, frequency=1, skip=False, adjust=False
+    Wait, duration=0.8
+    Walk, direction=left, duration=0.2
+    ShadowLeap
     Shurikkane
 >, label=meso, frequency=7, skip=False
 *, x=0.632, y=0.189, frequency=1, skip=False, adjust=False
@@ -29,11 +30,12 @@
 *, x=0.428, y=0.194, frequency=1, skip=False, adjust=False
     ShowDown_nodir
 >, label=install, frequency=6, skip=False
-*, x=0.254, y=0.214, frequency=1, skip=False, adjust=False
+*, x=0.24, y=0.214, frequency=1, skip=False, adjust=False
     ShowDown_nodir
-    Adjust, x=0.214, y=0.214, max_steps=5
-    Fall, distance=0.05
-    ShowDown_nodir
+    Fall_ignoreRope, distance=0.04
+    SuddenRaid
+*, x=0.24, y=0.259, frequency=2, skip=False, adjust=False
+    Fall_ignoreRope, distance=0.01
 >, label=root, frequency=1, skip=False
 
 @, label=install
