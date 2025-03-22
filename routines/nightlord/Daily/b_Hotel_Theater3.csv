@@ -45,7 +45,7 @@
 *, x=0.22, y=0.154, frequency=1, skip=False, adjust=False
     Adjust, x=0.159, y=0.154, max_steps=5
     Wait, duration=1
-    Fall, distance=0.05
+    Fall_ignoreRope, distance=0.04
 >, label=root, frequency=1, skip=False
 
 @, label=meso
