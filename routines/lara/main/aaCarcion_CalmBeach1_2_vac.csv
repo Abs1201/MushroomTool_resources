@@ -62,4 +62,4 @@
     Wait, duration=0.5
     Yanus
     Walk, direction=left, duration=1
-    Fall_ignoreRope, distance=0.02
+    Fall, distance=0.02
