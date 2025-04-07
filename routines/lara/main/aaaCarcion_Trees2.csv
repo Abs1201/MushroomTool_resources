@@ -1,0 +1,62 @@
+
+@, label=main
+*, x=0.153, y=0.5, frequency=1, skip=False, adjust=False
+    DragonVeinEruption
+    Walk, direction=right, duration=0.25
+    DragonVeinEruption
+*, x=0.153, y=0.5, frequency=5, skip=False, adjust=False
+    LarasConnection
+*, x=0.153, y=0.5, frequency=3, skip=False, adjust=False
+    Wait, duration=0.25
+    ErdaShower, jump=False
+*, x=0.324, y=0.494, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.511, y=0.494, frequency=2, skip=False, adjust=False
+    Walk, direction=left, duration=0.4
+    DragonVeinEruption
+*, x=0.511, y=0.494, frequency=4, skip=False, adjust=False
+    BigStretch
+*, x=0.699, y=0.506, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.87, y=0.5, frequency=1, skip=False, adjust=False
+    Wait, duration=0.34
+    DragonVeinEruption
+*, x=0.87, y=0.45, frequency=6, skip=False, adjust=False
+    Fall, distance=0.02
+    WindingMountainRidge
+>, label=emplace, frequency=6, skip=False
+*, x=0.699, y=0.494, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.51, y=0.494, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+*, x=0.324, y=0.494, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+>, label=main, frequency=1, skip=False
+
+@, label=emplace
+*, x=0.801, y=0.49, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+    Adjust, x=0.801, y=0.5, max_steps=5
+*, x=0.801, y=0.42, frequency=1, skip=False, adjust=False
+    Adjust, x=0.801, y=0.324, max_steps=5
+    EssenceSprinkle
+    Wait, duration=0.8
+*, x=0.801, y=0.34, frequency=1, skip=False, adjust=False
+    Adjust, x=0.801, y=0.324, max_steps=5
+    Wait, duration=1
+    Yanus
+*, x=0.739, y=0.34, frequency=1, skip=False, adjust=False
+    Walk, direction=left, duration=0.5
+    TrueArachnidReflection
+*, x=0.528, y=0.34, frequency=1, skip=False, adjust=False
+    EssenceSprinkle
+    Wait, duration=0.5
+    Yanus
+*, x=0.295, y=0.352, frequency=1, skip=False, adjust=False
+    SurgingEssence
+    Adjust, x=0.295, y=0.352, max_steps=5
+    Wait, duration=0.5
+    Yanus
+    Fall, distance=0.02
