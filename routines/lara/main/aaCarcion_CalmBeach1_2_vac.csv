@@ -39,14 +39,14 @@
 @, label=emplace
 *, x=0.73, y=0.31, frequency=1, skip=False, adjust=False
     EssenceSprinkle
-    Adjust, x=0.73, y=0.344, max_steps=5
+    Adjust, x=0.73, y=0.365, max_steps=5
 *, x=0.73, y=0.25, frequency=1, skip=False, adjust=False
-    Adjust, x=0.73, y=0.122, max_steps=5
+    Adjust, x=0.73, y=0.212, max_steps=5
     EssenceSprinkle
     Wait, duration=0.8
 *, x=0.73, y=0.25, frequency=1, skip=False, adjust=False
     EssenceSprinkle
-    Adjust, x=0.73, y=0.19, max_steps=5
+    Adjust, x=0.73, y=0.212, max_steps=5
     Wait, duration=1
     Yanus
 *, x=0.725, y=0.25, frequency=1, skip=False, adjust=False
@@ -58,7 +58,7 @@
     Yanus
 *, x=0.3, y=0.19, frequency=1, skip=False, adjust=False
     SurgingEssence
-    Adjust, x=0.243, y=0.19, max_steps=5
+    Adjust, x=0.243, y=0.212, max_steps=5
     Wait, duration=0.5
     Yanus
     Walk, direction=left, duration=1
