@@ -1,12 +1,12 @@
 
 @, label=main
-*, x=0.1, y=0.31, frequency=1, skip=False, adjust=False
+*, x=0.15, y=0.35, frequency=1, skip=False, adjust=False
     DragonVeinEruption
     Walk, direction=right, duration=0.25
     DragonVeinEruption
-*, x=0.1, y=0.31, frequency=5, skip=False, adjust=False
+*, x=0.15, y=0.35, frequency=5, skip=False, adjust=False
     LarasConnection
-*, x=0.1, y=0.31, frequency=3, skip=False, adjust=False
+*, x=0.15, y=0.35, frequency=3, skip=False, adjust=False
     Wait, duration=0.25
     ErdaShower, jump=False
 *, x=0.328, y=0.31, frequency=1, skip=False, adjust=False
