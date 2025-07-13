@@ -10,27 +10,24 @@ from src.common.vkeys import press, key_down, key_up
 # List of key mappings
 class Key:
     # Movement
+    TELEPORT = 'd'
     JUMP = 'a' 
     ROPE_LIFT = 'shift' 
-    FOX_TROT = 'd'
-    BACK_STEP = 's'
 
     # Buffs
-    DICE = 'f1'
-    HOLY_SYMBOL = 'f2'
-    HEROIC_MEMORIES = '1'
-    
+    BUFF60 = '1'
+    BUFF120 = '2'
+    BUFF180 = '3'
 
     # Skills
-    BOMB_PUNCH = 'f'
-    SPIRIT_CLAW = 'g'
+    BIGBANG = 'f'
+    GENESIS = 's'
     
     ERDA_SHOWER = 't'
-    SPIRIT_FRENZY = 'r'
+    ERDA2 = 'v'
 
-    FOX_GOD_FLASH = '2'
-    FOX_MARBLE_FUSION = '3'
-    SPIRIT_GATE = 'v'
+    DOOR = 'alt'
+    PIECEMAKER = 'e'
     
     
 
@@ -38,12 +35,7 @@ class Key:
 #       Commands        #
 #########################
 def step(direction, target):
-    """
-    Performs one movement step in the given DIRECTION towards TARGET.
-    Should not press any arrow keys, as those are handled by MushroomTool.
-    """
-
-    num_presses = 2
+    num_presses = 1
     if direction == 'up' or direction == 'down':
         num_presses = 1
     if config.stage_fright and direction != 'up' and utils.bernoulli(0.75):
@@ -54,7 +46,7 @@ def step(direction, target):
             press(Key.JUMP, 1)
         elif direction == 'up':
             press(Key.JUMP, 1)
-    press(Key.JUMP, num_presses)
+    press(Key.TELEPORT, num_presses)
 
 
 class Adjust(Command):
@@ -124,27 +116,29 @@ class Buff(Command):
         self.flag = True
 
     def main(self):
-        buffs = [Key.HOLY_SYMBOL, Key.DICE]
+        buffs = [Key.BUFF3]
         now = time.time()
 
         if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
             for key in buffs:
                 press(key, 2, up_time=0.3)
             self.decent_buff_time = now
+            time.sleep(utils.rand_float(0.4, 0.7))
 
         if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
             self.cd120_buff_time = now
-            press(Key.HEROIC_MEMORIES, 2, up_time=0.3)
+            press(Key.BUFF, 2, up_time=0.3)
+            time.sleep(utils.rand_float(0.4, 0.7))
             
-        if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
-            self.cd60_buff_time = now
-            if self.flag:
-                press(Key.FOX_GOD_FLASH, 3)
-                print("\ntest2")
-            else:
-                press(Key.FOX_MARBLE_FUSION, 3)
-                print("\ntest3")
-            self.flag = not self.flag
+        # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
+        #     self.cd60_buff_time = now
+        #     if self.flag:
+        #         press(Key.FOX_GOD_FLASH, 3)
+        #         print("\ntest2")
+        #     else:
+        #         press(Key.FOX_MARBLE_FUSION, 3)
+        #         print("\ntest3")
+        #     self.flag = not self.flag
 
 class ErdaShower(Command):
     
@@ -156,46 +150,34 @@ class ErdaShower(Command):
         num_presses = 2
         time.sleep(0.05)
         press(Key.ERDA_SHOWER, num_presses)
-        if settings.record_layout:
-	        config.layout.add(*config.player_pos)
+        
+class Erda2(Command):
     
-class SpirityFrenzy(Command):
-    def main(self):
-        press(Key.SPIRIT_FRENZY)
-        
-class FoxGodFlash(Command):
-    def main(self):
-        press(Key.FOX_GOD_FLASH, 1, down_time= 0.3)
-        
-class FoxMarbleFusion(Command):
-    def main(self):
-        press(Key.FOX_MARBLE_FUSION, 1, down_time=0.3)
-        
-    
-class BombPunch_nodir(Command):
-    def main(self):
-        press(Key.BOMB_PUNCH)
-        
-class BombPunch(Command):
-    def __init__(self, direction, attacks=1):
+    def __init__(self, jump='False'):
         super().__init__(locals())
-        self.direction = settings.validate_horizontal_arrows(direction)
-        self.attacks = int(attacks)
+        self.jump = settings.validate_boolean(jump)
 
     def main(self):
-        key_down(self.direction)
-        key_up(self.direction)
-        press(Key.BOMB_PUNCH, self.attacks)
-        time.sleep(0.2)
-  	   
-class SpiritClaw(Command):
+        num_presses = 2
+        time.sleep(0.05)
+        press(Key.ERDA2, num_presses)
+    
+    
+class BigBang(Command):
     def main(self):
-        press(Key.SPIRIT_CLAW, 2)
-           
+        press(Key.BIGBANG, 1, up_time=0.05)
+    
+class Genesis(Command):
+    def main(self):
+        press(Key.GENESIS, 1, up_time=0.05)
 
-class SpiritGate(Command):
+class Piecemaker(Command):
     def main(self):
-        press(Key.SPIRIT_GATE, 2) 
+        press(Key.PIECEMAKER, 1, down_time=0.3)
+    
+class Door(Command):
+    def main(self):
+        press(Key.DOOR, 1, down_time=0.3)
         
 
 
