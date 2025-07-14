@@ -15,10 +15,10 @@ class Key:
     ROPE_LIFT = 'shift' 
 
     # Buffs
-    BUFF60 = '1'
-    BUFF120 = '2'
-    BUFF180 = '3'
-
+    BUFF60 = 'f1'
+    INFINITY = '2'
+    MIND = '3'
+    
     # Skills
     BIGBANG = 'f'
     GENESIS = 's'
@@ -43,7 +43,7 @@ def step(direction, target):
     d_y = target[1] - config.player_pos[1]
     if abs(d_y) > settings.move_tolerance * 1.5:
         if direction == 'down':
-            press(Key.JUMP, 1)
+            press(Key.JUMP, 2)
         elif direction == 'up':
             press(Key.JUMP, 1)
     press(Key.TELEPORT, num_presses)
@@ -116,29 +116,28 @@ class Buff(Command):
         self.flag = True
 
     def main(self):
-        buffs = [Key.BUFF3]
+        buffs = [Key.BUFF60]
         now = time.time()
+        
+        # if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
+        #     for key in buffs:
+        #         press(key, 2, up_time=0.3)
+        #     self.decent_buff_time = now
+        #     time.sleep(utils.rand_float(0.4, 0.7))
 
-        if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
+        if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
+            self.cd60_buff_time = now
             for key in buffs:
                 press(key, 2, up_time=0.3)
-            self.decent_buff_time = now
-            time.sleep(utils.rand_float(0.4, 0.7))
-
-        if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
-            self.cd120_buff_time = now
-            press(Key.BUFF, 2, up_time=0.3)
             time.sleep(utils.rand_float(0.4, 0.7))
             
-        # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
-        #     self.cd60_buff_time = now
-        #     if self.flag:
-        #         press(Key.FOX_GOD_FLASH, 3)
-        #         print("\ntest2")
-        #     else:
-        #         press(Key.FOX_MARBLE_FUSION, 3)
-        #         print("\ntest3")
-        #     self.flag = not self.flag
+        if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
+            self.cd180_buff_time = now
+            if self.flag:
+                press(Key.INFINITY, 2)
+            else:
+                press(Key.MIND, 2)
+            self.flag = not self.flag
 
 class ErdaShower(Command):
     
