@@ -1,0 +1,65 @@
+
+@, label=Bot
+*, x=0.837, y=0.185, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StoneTremor, direction=up
+    Fall_ignoreRope, distance=0.01
+    ThousandTonStone
+>, label=root, frequency=1, skip=False
+
+@, label=root
+*, x=0.837, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.685, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+>, label=vortex, frequency=6, skip=False
+*, x=0.543, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.476, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.316, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.217, y=0.33, frequency=3, skip=False, adjust=False
+    ConsumingFlames
+>, label=erda, frequency=7, skip=False
+*, x=0.160, y=0.348, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    useWarpGate
+
+@, label=erdaEnd
+>, label=Bot, frequency=1, skip=False
+
+@, label=vortex
+*, x=0.582, y=0.25, frequency=1, skip=False, adjust=False
+    Adjust, x=0.582, y=0.185, max_steps=4
+*, x=0.582, y=0.185, frequency=2, skip=False, adjust=False
+    Wait, duration=0.8
+    MiracleTonic
+*, x=0.582, y=0.185, frequency=1, skip=False, adjust=False
+    Wait, duration=0.4
+    StarVortex, direction=left
+    Wait, duration=1
+    GhostFlame
+>, label=gate, frequency=2, skip=False
+*, x=0.582, y=0.185, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=erda
+*, x=0.158, y=0.24, frequency=1, skip=False, adjust=False
+    Adjust, x=0.158, y=0.179, max_steps=5
+    Wait, duration=0.2
+    ErdaShower, jump=False
+    Wait, duration=0.2
+    useWarpGate
+>, label=erdaEnd, frequency=1, skip=False
+
+@, label=gate
+*, x=0.7, y=0.212, frequency=1, skip=False, adjust=False
+    GoldBandedCudgel, direction=right, attacks=2, repetitions=1
+*, x=0.837, y=0.185, frequency=1, skip=False, adjust=False
+    Fan, direction=right, attacks=1, repetitions=1
+    Adjust, x=0.837, y=0.185, max_steps=5
+    Wait, duration=0.4
+    newWarpGate
