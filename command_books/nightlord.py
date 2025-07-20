@@ -15,18 +15,19 @@ class Key:
     ROPE_LIFT = 'shift' 
 
     # Buffs
-    DECENT_HOLY_SYMBOL = 'f3'
+    DECENT_HOLY_SYMBOL = 'f1'
 
-    EPIC_ADVENTURE = '1'
-    THROW_BLASTING = '2'
-    SHADOW_WALK = 'insert'
+
+    THROW_BLASTING = '1'
+    THROWING_STAR = '2'
+    EPIC_ADVENTURE = '3'
+    SHADOW_WALK = '4'
 
     # Skills
     SHOWDOWN = 'f' 
-    QUAD_STAR = 'g' 
-    DARKLORDS_OMEN = 'w' 
     DEATH_STAR = 'e' 
-    SUDDEN_RAID = 'r'
+    SUDDEN_RAID = 'w'
+    DARKLORDS_OMEN = 'r' 
     DARK_FLARE = 'v' 
     SHURIKKANE = 's'
    
