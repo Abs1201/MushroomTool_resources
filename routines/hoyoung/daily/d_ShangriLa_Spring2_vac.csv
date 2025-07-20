@@ -1,0 +1,64 @@
+
+@, label=Bot
+>, label=2ndmeso, frequency=3, skip=False
+*, x=0.647, y=0.187, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StoneTremor, direction=up
+    Fall_ignoreRope, distance=0.01
+    ThousandTonStone
+>, label=root, frequency=1, skip=False
+
+@, label=2ndmeso
+*, x=0.647, y=0.187, frequency=1, skip=False, adjust=False
+    Wait, duration=0.1
+    StoneTremor, direction=up
+    Walk, direction=right, duration=1.4
+
+@, label=root
+>, label=erda, frequency=7, skip=False
+
+@, label=Bot2
+*, x=0.647, y=0.348, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.476, y=0.337, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.316, y=0.342, frequency=1, skip=False, adjust=False
+    Fan, direction=left, attacks=2, repetitions=1
+*, x=0.185, y=0.348, frequency=3, skip=False, adjust=False
+    ConsumingFlames
+>, label=vortex, frequency=6, skip=False
+*, x=0.160, y=0.348, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=vortex
+*, x=0.31, y=0.166, frequency=1, skip=False, adjust=False
+    Adjust, x=0.31, y=0.166, max_steps=4
+*, x=0.31, y=0.166, frequency=2, skip=False, adjust=False
+    Wait, duration=0.8
+    MiracleTonic
+*, x=0.31, y=0.166, frequency=1, skip=False, adjust=False
+    Wait, duration=0.4
+    StarVortex, direction=left
+    Wait, duration=1
+    GhostFlame
+>, label=gate, frequency=2, skip=False
+*, x=0.31, y=0.166, frequency=1, skip=False, adjust=False
+    Wait, duration=1
+    useWarpGate
+>, label=Bot, frequency=1, skip=False
+
+@, label=erda
+*, x=0.647, y=0.348, frequency=1, skip=False, adjust=False
+    Walk, direction=right, duration=1
+    ErdaShower, jump=False
+>, label=Bot2, frequency=1, skip=False
+
+@, label=gate
+*, x=0.471, y=0.150, frequency=1, skip=False, adjust=False
+    GoldBandedCudgel, direction=right, attacks=2, repetitions=1
+*, x=0.642, y=0.187, frequency=1, skip=False, adjust=False
+    Adjust, x=0.62, y=0.187, max_steps=9
+    Wait, duration=0.1
+    newWarpGate

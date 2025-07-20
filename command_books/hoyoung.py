@@ -26,23 +26,22 @@ class Key:
     GOLD_BANDED_CUDGEL = 'g' 
     STAR_VOLTEX = 'v' 
     STONE_TREMOR = 'r'
-    TALIESMAN_CLONE = 'q'
+    # TALIESMAN_CLONE = 'q'
     WARP_GATE = 'z'
     CONSUMING_FLAMES = 's'
     GHOST_FLAME = 'w'
     THOUSANDTON_STONE = 'd'
     IRONFAN = 'c'
     ERDA_SHOWER = 't'
-    TIGER = '2'
+    #TIGER = '2'
     CLONE_RAMPAGE = '3'
     
-    BUTTERFLY_DREAM = '1'
+    #BUTTERFLY_DREAM = '1'
     WRATH_OF_GODS = 'page down'
-    SAGE_TAIYU_MIRACLE_TONIC = 'h'
-    TIGER = '2'
+    MIRACLE_TONIC = 'h'
     
-    REFLECTION = 'f1'
-    SOLAR_CREST = 'f2'
+    REFLECTION = 'f2'
+    SOLAR_CREST = 'f3'
 
 
 #########################
@@ -299,16 +298,7 @@ class GhostFlame(Command):
 
     def main(self):
         press(Key.GHOST_FLAME, 2)
-
-class TalismanClone(Command):
-    """Uses 'SuddenRaid' once."""
-
-    def main(self):
-        press(Key.TALIESMAN_CLONE, 2)
         
-class ButterflyDream(Command):
-    def main(self):
-        press(Key.BUTTERFLY_DREAM, 2)
         
 class WrathofGods(Command):
     def main(self):
@@ -320,7 +310,7 @@ class ConsumingFlames(Command):
 
 class MiracleTonic(Command):
     def main(self):
-        press(Key.SAGE_TAIYU_MIRACLE_TONIC,2)
+        press(Key.MIRACLE_TONIC,2)
         
 class ThousandTonStone(Command):
     def main(self):
