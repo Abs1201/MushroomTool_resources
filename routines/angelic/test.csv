@@ -1,10 +1,11 @@
-*, x=0.674, y=0.204, frequency=1, skip=False, adjust=False
+*, x=0.712, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
-*, x=0.508, y=0.227, frequency=1, skip=False, adjust=False
+*, x=0.497, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
-*, x=0.381, y=0.177, frequency=1, skip=False, adjust=False
+*, x=0.294, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
-*, x=0.481, y=0.227, frequency=1, skip=False, adjust=False
+*, x=0.102, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
-*, x=0.674, y=0.227, frequency=1, skip=False, adjust=False
+*, x=0.294, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
+*, x=0.497, y=0.333, frequency=1, skip=False, adjust=False

@@ -32,7 +32,8 @@ class Key:
     SOUL_SEEKER='s'
     SPOTLIGHT='c'
     SPARKLE_BURST='q'
-    REFLECTION = 'v'
+    REFLECTION = 'f2'
+    SOLAR_CRUST = 'f3'
     
     
     
@@ -124,8 +125,10 @@ class Buff(Command):
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
         self.cd240_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
+        self.flag250=True
 
     def main(self):
         buffs = [Key.ROLL_OF_THE_DICE, Key.SYMBOL]
@@ -139,6 +142,13 @@ class Buff(Command):
             for key in buffs:
                 press(key, 3, up_time=0.3)
             self.decent_buff_time = now
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
+            if self.flag250:
+                press(Key.SOLAR_CRUST,2)
+            else:
+                press(Key.REFLECTION,2)
+            self.cd250_buff_time = now
+            self.flag250 = not self.flag250
 
 
 class CelestialRoar(Command):

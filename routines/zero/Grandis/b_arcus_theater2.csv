@@ -1,23 +1,23 @@
 
 @, label=root
-*, x=0.671, y=0.25, frequency=1, skip=False, adjust=False
+*, x=0.734, y=0.25, frequency=1, skip=False, adjust=False
     Fall, distance=0.05
     Wait, duration=0.5
     Fall, distance=0.05
     Wait, duration=0.1
     GigaCrash, direction=left, attacks=3, repetitions=2
-*, x=0.671, y=0.24, frequency=17, skip=False, adjust=False
+*, x=0.734, y=0.24, frequency=17, skip=False, adjust=False
     FlashCut, direction=left, attacks=3, repetitions=2
     Wait, duration=0.4
-*, x=0.671, y=0.22, frequency=1, skip=False, adjust=False
-    Adjust, x=0.737, y=0.185, max_steps=5
+*, x=0.734, y=0.22, frequency=1, skip=False, adjust=False
+    Adjust, x=0.734, y=0.181, max_steps=5
     Wait, duration=0.4
     WindCutter, direction=left, attacks=3, repetitions=2
 >, label=install, frequency=9, skip=False
 >, label=root, frequency=1, skip=False
 
 @, label=install
-*, x=0.671, y=0.25, frequency=1, skip=False, adjust=False
+*, x=0.734, y=0.25, frequency=1, skip=False, adjust=False
     Fall, distance=0.05
     Fall, distance=0.05
     ShodowFlash
