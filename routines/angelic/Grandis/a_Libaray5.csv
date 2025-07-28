@@ -4,6 +4,8 @@
     CelestialRoar
 *, x=0.385, y=0.339, frequency=1, skip=False, adjust=False
     CelestialRoar
+*, x=0.345, y=0.287, frequency=6, skip=False, adjust=False
+    Supernova
 *, x=0.178, y=0.333, frequency=1, skip=False, adjust=False
     CelestialRoar
 *, x=0.195, y=0.24, frequency=6, skip=False, adjust=False
@@ -14,5 +16,7 @@
     CelestialRoar
 *, x=0.598, y=0.339, frequency=1, skip=False, adjust=False
     CelestialRoar
+*, x=0.672, y=0.339, frequency=2, skip=False, adjust=False
+    Spotlight
 *, x=0.793, y=0.339, frequency=1, skip=False, adjust=False
     CelestialRoar
