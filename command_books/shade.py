@@ -17,7 +17,7 @@ class Key:
 
     # Buffs
     DICE = 'f1'
-    HOLY_SYMBOL = 'f2'
+    HOLY_SYMBOL = 'f7'
     HEROIC_MEMORIES = '1'
     
 
@@ -26,11 +26,13 @@ class Key:
     SPIRIT_CLAW = 'g'
     
     ERDA_SHOWER = 't'
-    SPIRIT_FRENZY = 'r'
+    SPIRIT_FRENZY = 'v'
 
     FOX_GOD_FLASH = '2'
     FOX_MARBLE_FUSION = '3'
-    SPIRIT_GATE = 'v'
+    SPIRIT_GATE = 'e'
+    REFLECTION = 'f2'
+    SOLAR_CRUST= 'f3'
     
     
 
@@ -68,7 +70,6 @@ class Adjust(Command):
     def main(self):
         counter = self.max_steps
         toggle = True
-        # cloud = False
         error = utils.distance(config.player_pos, self.target)
         while config.enabled and counter > 0 and error > settings.adjust_tolerance:
             if toggle:
@@ -96,12 +97,14 @@ class Adjust(Command):
                 if abs(d_y) > settings.adjust_tolerance / math.sqrt(2):
                     if d_y < 0:
                         press(Key.ROPE_LIFT, 1, down_time=0.01)
+                        time.sleep(1.5)
+                        # press(Key.LEAP_UP, 1)
+                    else:
                         key_down('down')
                         time.sleep(0.05)
                         press(Key.JUMP, 1, down_time=0.1)
                         key_up('down')
                         time.sleep(0.05)
-                    time.sleep(0.9)
                     if config.bot.rune_active:
                         time.sleep(1)
                     counter -= 1
@@ -119,9 +122,11 @@ class Buff(Command):
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
         self.cd240_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
         self.flag = True
+        self.flag250 = True
 
     def main(self):
         buffs = [Key.HOLY_SYMBOL, Key.DICE]
@@ -145,6 +150,14 @@ class Buff(Command):
                 press(Key.FOX_MARBLE_FUSION, 3)
                 print("\ntest3")
             self.flag = not self.flag
+        
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
+            if self.flag250:
+                press(Key.SOLAR_CRUST,2)
+            else:
+                press(Key.REFLECTION,2)
+            self.cd250_buff_time = now
+            self.flag250 = not self.flag250
 
 class ErdaShower(Command):
     

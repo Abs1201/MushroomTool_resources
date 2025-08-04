@@ -60,6 +60,6 @@
     GoldBandedCudgel, direction=right, attacks=2, repetitions=1
 *, x=0.837, y=0.185, frequency=1, skip=False, adjust=False
     Fan, direction=right, attacks=1, repetitions=1
-    Adjust, x=0.837, y=0.185, max_steps=5
+    Adjust, x=0.826, y=0.185, max_steps=5
     Wait, duration=0.4
     newWarpGate
