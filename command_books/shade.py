@@ -145,10 +145,8 @@ class Buff(Command):
             self.cd60_buff_time = now
             if self.flag:
                 press(Key.FOX_GOD_FLASH, 3)
-                print("\ntest2")
             else:
                 press(Key.FOX_MARBLE_FUSION, 3)
-                print("\ntest3")
             self.flag = not self.flag
         
         if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:

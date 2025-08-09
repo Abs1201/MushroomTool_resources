@@ -1,0 +1,41 @@
+
+@, label=root
+*, x=0.064, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.186, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.305, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.427, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.550, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.682, y=0.332, frequency=1, skip=False, adjust=False
+    SpiritClaw
+*, x=0.745, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.614, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+>, label=install, frequency=6, skip=False
+*, x=0.550, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.427, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.305, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.186, y=0.332, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.577, y=0.24, frequency=1, skip=False, adjust=False
+    Adjust, x=0.577, y=0.191, max_steps=5
+    Wait, duration=.2
+    ErdaShower, jump=False
+*, x=0.418, y=0.205, frequency=1, skip=False, adjust=False
+    BombPunch_nodir
+*, x=0.186, y=0.159, frequency=1, skip=False, adjust=False
+    SpiritGate
+    Adjust, x=0.186, y=0.159, max_steps=5
+    Wait, duration=.5
+    SpirityFrenzy

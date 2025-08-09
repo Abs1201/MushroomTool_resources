@@ -38,4 +38,5 @@
 *, x=0.355, y=0.205, frequency=1, skip=False, adjust=False
     BombPunch_nodir
     Adjust, x=0.295, y=0.205, max_steps=5
+    Wait, duration=1
     SpirityFrenzy
