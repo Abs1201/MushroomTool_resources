@@ -36,6 +36,6 @@
     BombPunch_nodir
 *, x=0.204, y=0.174, frequency=1, skip=False, adjust=False
     SpiritGate
-    Adjust, x=0.204, y=0.174, max_steps=5
+    Adjust, x=0.209, y=0.139, max_steps=5
     Wait, duration=.5
     SpirityFrenzy
