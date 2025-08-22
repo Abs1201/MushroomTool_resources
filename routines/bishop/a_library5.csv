@@ -1,0 +1,40 @@
+
+@, label=root
+*, x=0.161, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.310, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.477, y=0.339, frequency=3, skip=False, adjust=False
+    Door
+*, x=0.477, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.632, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.759, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+>, label=install, frequency=6, skip=False
+*, x=0.632, y=0.339, frequency=2, skip=False, adjust=False
+    Genesis
+*, x=0.632, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.477, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.310, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.718, y=0.264, frequency=1, skip=False, adjust=False
+    Adjust, x=0.718, y=0.264, max_steps=5
+    Wait, duration=1
+    Erda2, jump=False
+    BigBang
+*, x=0.523, y=0.264, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.391, y=0.339, frequency=1, skip=False, adjust=False
+    BigBang
+*, x=0.236, y=0.195, frequency=1, skip=False, adjust=False
+    Adjust, x=0.236, y=0.195, max_steps=5
+    Wait, duration=1
+    ErdaShower, jump=False
+    BigBang

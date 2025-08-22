@@ -60,7 +60,6 @@ class Adjust(Command):
     def main(self):
         counter = self.max_steps
         toggle = True
-        # cloud = False
         error = utils.distance(config.player_pos, self.target)
         while config.enabled and counter > 0 and error > settings.adjust_tolerance:
             if toggle:
@@ -88,14 +87,17 @@ class Adjust(Command):
                 if abs(d_y) > settings.adjust_tolerance / math.sqrt(2):
                     if d_y < 0:
                         press(Key.ROPE_LIFT, 1, down_time=0.01)
+                        time.sleep(0.5)
+                        # press(Key.LEAP_UP, 1)
+                    else:
                         key_down('down')
                         time.sleep(0.05)
                         press(Key.JUMP, 1, down_time=0.1)
                         key_up('down')
                         time.sleep(0.05)
-                    time.sleep(0.9)
+                    time.sleep(1.0)
                     if config.bot.rune_active:
-                        time.sleep(1)
+                        time.sleep(1.0)
                     counter -= 1
             error = utils.distance(config.player_pos, self.target)
             toggle = not toggle

@@ -14,7 +14,7 @@ class Key:
     # Movement
     JUMP = 'a'
     LEAP_UP = 'shift'
-    ROPE_RIFT = '\''
+    ROPE_LIFT = '\''
 
     # Buffs
     ANIMA_WARRIOR = 'd'
@@ -100,7 +100,7 @@ class Adjust(Command):
                 d_y = self.target[1] - config.player_pos[1]
                 if abs(d_y) > settings.adjust_tolerance / math.sqrt(2):
                     if d_y < 0:
-                        press(Key.ROPE_RIFT, 1, down_time=0.01)
+                        press(Key.ROPE_LIFT, 1, down_time=0.01)
                         time.sleep(0.5)
                         # press(Key.LEAP_UP, 1)
                     else:
