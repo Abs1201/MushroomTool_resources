@@ -12,7 +12,7 @@
     BigBang
 *, x=0.759, y=0.339, frequency=1, skip=False, adjust=False
     BigBang
->, label=install, frequency=6, skip=False
+>, label=install, frequency=7, skip=False
 *, x=0.632, y=0.339, frequency=2, skip=False, adjust=False
     Genesis
 *, x=0.632, y=0.339, frequency=1, skip=False, adjust=False
