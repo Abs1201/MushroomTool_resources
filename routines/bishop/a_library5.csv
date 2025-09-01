@@ -12,7 +12,7 @@
     BigBang
 *, x=0.759, y=0.339, frequency=1, skip=False, adjust=False
     BigBang
->, label=install, frequency=7, skip=False
+>, label=install, frequency=8, skip=False
 *, x=0.632, y=0.339, frequency=2, skip=False, adjust=False
     Genesis
 *, x=0.632, y=0.339, frequency=1, skip=False, adjust=False
@@ -31,6 +31,8 @@
     BigBang
 *, x=0.523, y=0.264, frequency=1, skip=False, adjust=False
     BigBang
+    Wait, duration=0.5
+    Piecemaker
 *, x=0.391, y=0.339, frequency=1, skip=False, adjust=False
     BigBang
 *, x=0.236, y=0.195, frequency=1, skip=False, adjust=False
@@ -38,3 +40,8 @@
     Wait, duration=1
     ErdaShower, jump=False
     BigBang
+    Walk, direction=left, duration=1
+    Fall, distance=0.05
+*, x=0.167, y=0.264, frequency=1, skip=False, adjust=False
+    BigBang
+    Fall, distance=0.05

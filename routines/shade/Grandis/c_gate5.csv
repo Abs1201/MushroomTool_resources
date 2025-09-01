@@ -32,7 +32,7 @@
     Adjust, x=0.83, y=0.229, max_steps=5
     Wait, duration=1
     SpirityFrenzy
-    SpiritGate
+    SpiritClaw
 *, x=0.670, y=0.229, frequency=1, skip=False, adjust=False
     BombPunch_nodir
 *, x=0.484, y=0.266, frequency=1, skip=False, adjust=False
@@ -43,4 +43,5 @@
     Adjust, x=0.223, y=0.229, max_steps=5
     Wait, duration=1
     ErdaShower, jump=False
-    SpiritClaw
+    Wait, duration=0.5
+    SpiritGate

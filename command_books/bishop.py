@@ -20,6 +20,8 @@ class Key:
     MIND = '3'
     
     # Skills
+    REFLECTION = 'f2'
+    SOLAR_CRUST = 'f3'
     BIGBANG = 'f'
     GENESIS = 's'
     
@@ -28,6 +30,8 @@ class Key:
 
     DOOR = 'alt'
     PIECEMAKER = 'e'
+    
+    ORIGIN = 'page down'
     
     
 
@@ -112,11 +116,12 @@ class Buff(Command):
         self.cd120_buff_time = 0
         self.cd180_buff_time = 0
         self.cd200_buff_time = 0
-        self.cd240_buff_time = 0
+        self.cd250_buff_time = 0
         self.cd900_buff_time = 0
         self.decent_buff_time = 0
         self.flag = True
-
+        self.flag250 = True
+        
     def main(self):
         buffs = [Key.BUFF60]
         now = time.time()
@@ -127,11 +132,11 @@ class Buff(Command):
         #     self.decent_buff_time = now
         #     time.sleep(utils.rand_float(0.4, 0.7))
 
-        if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
-            self.cd60_buff_time = now
-            for key in buffs:
-                press(key, 2, up_time=0.3)
-            time.sleep(utils.rand_float(0.4, 0.7))
+        # if self.cd60_buff_time == 0 or now - self.cd60_buff_time > 60:
+        #     self.cd60_buff_time = now
+        #     for key in buffs:
+        #         press(key, 2, up_time=0.3)
+        #     time.sleep(utils.rand_float(0.4, 0.7))
             
         if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
             self.cd180_buff_time = now
@@ -139,7 +144,17 @@ class Buff(Command):
                 press(Key.INFINITY, 2)
             else:
                 press(Key.MIND, 2)
+            time.sleep(utils.rand_float(0.4, 0.7))
+            press(Key.ORIGIN, 2)
             self.flag = not self.flag
+            
+        if self.cd250_buff_time == 0 or now - self.cd250_buff_time > 250/2+4:
+            if self.flag250:
+                press(Key.SOLAR_CRUST,2)
+            else:
+                press(Key.REFLECTION,2)
+            self.cd250_buff_time = now
+            self.flag250 = not self.flag250
 
 class ErdaShower(Command):
     
