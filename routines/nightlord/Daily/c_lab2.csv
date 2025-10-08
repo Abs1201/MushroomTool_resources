@@ -1,0 +1,39 @@
+
+@, label=root
+*, x=0.091, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.269, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.419, y=0.468, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.608, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.790, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+>, label=install, frequency=6, skip=False
+*, x=0.608, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.419, y=0.468, frequency=1, skip=False, adjust=False
+    Wait, duration=0.8
+    DarklordsOmen, direction=right
+*, x=0.419, y=0.468, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.269, y=0.473, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+>, label=root, frequency=1, skip=False
+
+@, label=install
+*, x=0.780, y=0.328, frequency=1, skip=False, adjust=False
+    Adjust, x=0.78, y=0.328, max_steps=5
+    SuddenRaid
+    Wait, duration=0.5
+    ErdaShower, jump=False
+*, x=0.591, y=0.349, frequency=1, skip=False, adjust=False
+    DeathStar
+*, x=0.387, y=0.371, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+*, x=0.226, y=0.328, frequency=1, skip=False, adjust=False
+    ShowDown_nodir
+    Adjust, x=0.226, y=0.328, max_steps=5
+    Wait, duration=0.4
+    DarkFlare, direction=left
