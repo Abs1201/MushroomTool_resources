@@ -109,6 +109,7 @@ class Adjust(Command):
                         press(Key.JUMP, 1, down_time=0.1)
                         key_up('down')
                         time.sleep(0.05)
+                    time.sleep(1)
                     if config.bot.rune_active:
                         time.sleep(1)
                     counter -= 1
